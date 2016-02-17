@@ -1200,8 +1200,7 @@ select {
 
 /* 10.5.14 The textarea element*/
 textarea {
-	binding : textarea;
-	white-space : pre-wrap
+	binding : textarea
 }
 
 /* 10.5.15 The keygen element*/
