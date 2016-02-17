@@ -855,64 +855,32 @@ iframe[frameborder=0],
 iframe[frameborder=no] {
 	border : none
 }
-
-embed[align=left],
-iframe[align=left],
-img[align=left],
-input[type=image][align=left],
-object[align=left] {
+:matches(embed, iframe, img, input[type=image], object)[align=left] {
 	float : left
 }
 
-embed[align=right],
-iframe[align=right],
-img[align=right],
-input[type=image][align=right],
-object[align=right] {
+:matches(embed, iframe, img, input[type=image], object)[align=right] {
 	float : right
 }
 
-embed[align=top],
-iframe[align=top],
-img[align=top],
-input[type=image][align=top],
-object[align=top] {
+:matches(embed, iframe, img, input[type=image], object)[align=top] {
 	vertical-align : top
 }
 
-embed[align=baseline],
-iframe[align=baseline],
-img[align=baseline],
-input[type=image][align=baseline],
-object[align=baseline] {
+:matches(embed, iframe, img, input[type=image], object)[align=baseline] {
 	vertical-align : baseline
 }
 
-embed[align=texttop],
-iframe[align=texttop],
-img[align=texttop],
-input[type=image][align=texttop],
-object[align=texttop] {
+:matches(embed, iframe, img, input[type=image], object)[align=texttop] {
 	vertical-align : text-top
 }
 
-embed[align=absmiddle],
-iframe[align=absmiddle],
-img[align=absmiddle],
-input[type=image][align=absmiddle],
-object[align=absmiddle],
+:matches(embed, iframe, img, input[type=image], object)[align=absmiddle],
 embed[align=abscenter],
-iframe[align=abscenter],
-img[align=abscenter],
-input[type=image][align=abscenter],
-object[align=abscenter] {
+:matches(embed, iframe, img, input[type=image], object)[align=abscenter] {
 	vertical-align : middle
 }
 
-embed[align=bottom],
-iframe[align=bottom],
-img[align=bottom],
-input[type=image][align=bottom],
-object[align=bottom] {
+:matches(embed, iframe, img, input[type=image], object)[align=bottom] {
 	vertical-align : bottom
 }
