@@ -192,10 +192,6 @@ s {
 	text-decoration : line-through
 }
 
-blink {
-	text-decoration : blink
-}
-
 q::before {
 	content : open-quote
 }
