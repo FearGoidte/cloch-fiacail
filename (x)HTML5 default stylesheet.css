@@ -189,7 +189,7 @@ blockquote mark {
 	font-style : italic
 }
 
-blockquote mark::after
+blockquote mark::after {
 	content : ']'
 }
 
