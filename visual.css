@@ -322,7 +322,6 @@ ul {
 	list-style-type : disc
 }
 
-
 ol ul,
 ul ul {
 	list-style-type : circle
@@ -473,63 +472,6 @@ tr {
 	border-color : inherit
 }
 
-table[rules=none],
-table[rules=groups],
-table[rules=rows],
-table[rules=cols],
-table[rules=all],
-table[frame=void],
-table[frame=above],
-table[frame=below],
-table[frame=hsides],
-table[frame=lhs],
-table[frame=rhs],
-table[frame=vsides],
-table[frame=box],
-table[frame=border],
-table[rules=none] > tr > td,
-table[rules=none] > tr > th,
-table[rules=groups] > tr > td,
-table[rules=groups] > tr > th,
-table[rules=rows] > tr > td,
-table[rules=rows] > tr > th,
-table[rules=cols] > tr > td,
-table[rules=cols] > tr > th,
-table[rules=all] > tr > td,
-table[rules=all] > tr > th,
-table[rules=none] > thead > tr > td,
-table[rules=none] > thead > tr > th,
-table[rules=groups] > thead > tr > td,
-table[rules=groups] > thead > tr > th,
-table[rules=rows] > thead > tr > td,
-table[rules=rows] > thead > tr > th,
-table[rules=cols] > thead > tr > td,
-table[rules=cols] > thead > tr > th,
-table[rules=all] > thead > tr > td,
-table[rules=all] > thead > tr > th,
-table[rules=none] > tbody > tr > td,
-table[rules=none] > tbody > tr > th,
-table[rules=groups] > tbody > tr > td,
-table[rules=groups] > tbody > tr > th,
-table[rules=rows] > tbody > tr > td,
-table[rules=rows] > tbody > tr > th,
-table[rules=cols] > tbody > tr > td,
-table[rules=cols] > tbody > tr > th,
-table[rules=all] > tbody > tr > td,
-table[rules=all] > tbody > tr > th,
-table[rules=none] > tfoot > tr > td,
-table[rules=none] > tfoot > tr > th,
-table[rules=groups] > tfoot > tr > td,
-table[rules=groups] > tfoot > tr > th,
-table[rules=rows] > tfoot > tr > td,
-table[rules=rows] > tfoot > tr > th,
-table[rules=cols] > tfoot > tr > td,
-table[rules=cols] > tfoot > tr > th,
-table[rules=all] > tfoot > tr > td,
-table[rules=all] > tfoot > tr > th {
-	border-color : black;
-}
-
 thead[valign=top],
 tbody[valign=top],
 tfoot[valign=top],
@@ -569,136 +511,6 @@ th[valign=baseline] {
 td[nowrap],
 th[nowrap] {
 	white-space : nowrap
-}
-
-table[rules=none],
-table[rules=groups],
-table[rules=rows],
-table[rules=cols],
-table[rules=all] {
-	border-collapse  : collapse;
-	border-style : hidden
-}
-
-table[border] {
-	border-style : outset
-}/* only if border is not equivalent to zero */
-
-table[frame=void] {
-	border-style : hidden
-}
-table[frame=above] {
-	border-style : outset hidden hidden hidden
-}
-table[frame=below] {
-	border-style : hidden hidden outset hidden
-}
-table[frame=hsides] {
-	border-style : outset hidden outset hidden
-}
-table[frame=lhs] {
-	border-style : hidden hidden hidden outset
-}
-table[frame=rhs] {
-	border-style : hidden outset hidden hidden
-}
-table[frame=vsides] {
-	border-style : hidden outset
-}
-table[frame=box],
-table[frame=border] {
-	border-style : outset
-}
-
-table[border] > tr > td,
-table[border] > tr > th,
-table[border] > thead > tr > td,
-table[border] > thead > tr > th,
-table[border] > tbody > tr > td,
-table[border] > tbody > tr > th,
-table[border] > tfoot > tr > td,
-table[border] > tfoot > tr > th {
-  /* only if border is not equivalent to zero */
-	border-style : inset;
-	border-width : 1px
-}
-
-table[rules=none] > tr > td,
-table[rules=none] > tr > th,
-table[rules=none] > thead > tr > td,
-table[rules=none] > thead > tr > th,
-table[rules=none] > tbody > tr > td,
-table[rules=none] > tbody > tr > th,
-table[rules=none] > tfoot > tr > td,
-table[rules=none] > tfoot > tr > th,
-table[rules=groups] > tr > td,
-table[rules=groups] > tr > th,
-table[rules=groups] > thead > tr > td,
-table[rules=groups] > thead > tr > th,
-table[rules=groups] > tbody > tr > td,
-table[rules=groups] > tbody > tr > th,
-table[rules=groups] > tfoot > tr > td,
-table[rules=groups] > tfoot > tr > th,
-table[rules=rows] > tr > td,
-table[rules=rows] > tr > th,
-table[rules=rows] > thead > tr > td,
-table[rules=rows] > thead > tr > th,
-table[rules=rows] > tbody > tr > td,
-table[rules=rows] > tbody > tr > th,
-table[rules=rows] > tfoot > tr > td,
-table[rules=rows] > tfoot > tr > th {
-	border-style : none;
-	border-width : 1px
-}
-
-table[rules=cols] > tr > td,
-table[rules=cols] > tr > th,
-table[rules=cols] > thead > tr > td,
-table[rules=cols] > thead > tr > th,
-table[rules=cols] > tbody > tr > td,
-table[rules=cols] > tbody > tr > th,
-table[rules=cols] > tfoot > tr > td,
-table[rules=cols] > tfoot > tr > th {
-	border-style : none solid;
-	border-width : 1px
-}
-
-table[rules=all] > tr > td,
-table[rules=all] > tr > th,
-table[rules=all] > thead > tr > td,
-table[rules=all] > thead > tr > th,
-table[rules=all] > tbody > tr > td,
-table[rules=all] > tbody > tr > th,
-table[rules=all] > tfoot > tr > td,
-table[rules=all] > tfoot > tr > th {
-	border-style : solid;
-	border-width : 1px
-}
-
-table[rules=groups] > colgroup {
-	border-left-style : solid;
-	border-left-width : 1px;
-	border-right-style : solid;
-	border-right-width : 1px
-}
-
-table[rules=groups] > thead,
-table[rules=groups] > tbody,
-table[rules=groups] > tfoot {
-	border-top-style : solid;
-	border-top-width : 1px;
-	border-bottom-style : solid;
-	border-bottom-width : 1px
-}
-
-table[rules=rows] > tr,
-table[rules=rows] > thead > tr,
-table[rules=rows] > tbody > tr,
-table[rules=rows] > tfoot > tr {
-	border-top-style : solid;
-	border-top-width : 1px;
-	border-bottom-style : solid;
-	border-bottom-width : 1px
 }
 
 /* 10.3.11 Form controls */
@@ -759,9 +571,4 @@ iframe {
 
 video {
 	object-fit : contain
-}
-
-/* 10.4.3 Attributes for embedded content and images */
-iframe[frameborder=no] {
-	border : none
 }

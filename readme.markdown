@@ -56,8 +56,11 @@ I have removed the Ruby elements:
 
 I have removed the following deprecated attributes:
 
-* `align`, and
+* `align`,
+* `border`,
 * `clear`.
+* `frame`, and
+* `rules`.
 
 ### Other deletions
 
