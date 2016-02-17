@@ -75,12 +75,10 @@ pre {
 cite,
 dfn,
 em,
-i,
 var {
 	font-style : italic
 }
 
-b,
 strong {
 	font-weight : bolder
 }
@@ -89,10 +87,6 @@ code,
 kbd,
 samp {
 	font-family : monospace
-}
-
-small {
-	font-size : smaller
 }
 
 sub {
@@ -143,13 +137,11 @@ acronym[title] {
 	text-decoration : dotted underline
 }
 
-ins,
-u {
+ins {
 	text-decoration : underline
 }
 
-del,
-s {
+del {
 	text-decoration : line-through
 }
 
