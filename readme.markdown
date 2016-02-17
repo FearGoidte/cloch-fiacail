@@ -52,7 +52,14 @@ I have removed the Ruby elements:
 * `rt`, and
 * `rtc`.
 
-### Other deletions
+### Attributes
+
+I have removed the following deprecated attributes:
+
+* `align`, and
+* `clear`.
+
+### Other deletions
 
 As well as the bi-directional stylings and the bindings stylings. I never make use of those properties so they are best left to the visual agent rather than me.
 

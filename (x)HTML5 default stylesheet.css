@@ -170,19 +170,6 @@ nobr wbr {
 	white-space : normal
 }
 
-br[clear=left] {
-	clear : left
-}
-
-br[clear=right] {
-	clear : right
-}
-
-br[clear=all],
-br[clear=both] {
-	clear : both
-}
-
 blockquote mark {
 	background-color : inherit;
 	color : inherit;
