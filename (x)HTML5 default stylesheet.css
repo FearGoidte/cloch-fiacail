@@ -237,7 +237,6 @@ tfoot,
 tr,
 td,
 th,
-dir,
 dd,
 dl,
 dt,
@@ -421,7 +420,6 @@ x hgroup > h1 ~ h5 {
 }
 
 /* 10.3.8 Lists */
-dir,
 dd,
 dl,
 dt,
@@ -434,7 +432,6 @@ li {
 	display : list-item
 }
 
-dir,
 dl,
 ol,
 ul {
@@ -442,19 +439,12 @@ ul {
 	margin-top : 1em
 }
 
-dir dir,
-dir dl,
-dir ol,
-dir ul,
-dl dir,
 dl dl,
 dl ol,
 dl ul,
-ol dir,
 ol dl,
 ol ol,
 ol ul,
-ul dir,
 ul dl,
 ul ol,
 ul ul {
@@ -466,7 +456,6 @@ dd {
 	margin-left : 40px
 } /* LTR-specific: use 'margin-right' for rtl elements */
 
-dir,
 ol,
 ul {
 	padding-left : 40px
@@ -476,37 +465,19 @@ ol {
 	list-style-type : decimal
 }
 
-dir,
 ul {
 	list-style-type : disc
 }
 
-dir dir,
-dir ul,
-ol dir,
+
 ol ul,
-ul dir,
 ul ul {
 	list-style-type : circle
 }
 
-dir dir dir,
-dir dir ul,
-dir ol dir,
-dir ol ul,
-dir ul dir,
-dir ul ul,
-ol dir dir,
-ol dir ul,
-ol ol dir,
 ol ol ul,
-ol ul dir,
 ol ul ul,
-ul dir dir,
-ul dir ul,
-ul ol dir,
 ul ol ul,
-ul ul dir,
 ul ul ul {
 	list-style-type : square
 }
