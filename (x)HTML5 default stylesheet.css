@@ -253,30 +253,30 @@ h6 {
 	margin-top : 2.33em
 }
 
-x h1 {
+:matches(article, aside, nav, section) h1 {
 	font-size : 1.50em;
 	margin-bottom : .83em;
 	margin-top : .83em
 }
 
-x x h1 {
+:matches(article, aside, nav, section) :matches(article, aside, nav, section) h1 {
 	font-size : 1.17em;
 	margin-bottom : 1em;
 	margin-top : 1em
 }
 
-x x x h1 {
+:matches(article, aside, nav, section) :matches(article, aside, nav, section) :matches(article, aside, nav, section) h1 {
 	font-size : 1em;
 	margin-bottom : 1.33em;
 	margin-top : 1.33em
 }
 
-x x x x h1 {
+:matches(article, aside, nav, section) :matches(article, aside, nav, section) :matches(article, aside, nav, section) :matches(article, aside, nav, section) h1 {
 	font-size : .83em;
 	margin-bottom : 1.67em;
 	margin-top : 1.67em
 }
-x x x x x h1 {
+:matches(article, aside, nav, section) :matches(article, aside, nav, section) :matches(article, aside, nav, section) :matches(article, aside, nav, section) :matches(article, aside, nav, section) h1 {
 	font-size : .67em;
 	margin-bottom : 2.33em;
 	margin-top : 2.33em
