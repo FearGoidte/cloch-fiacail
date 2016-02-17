@@ -188,8 +188,7 @@ u {
 }
 
 del,
-s,
-strike {
+s {
 	text-decoration : line-through
 }
 
