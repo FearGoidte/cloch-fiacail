@@ -63,7 +63,7 @@ I have removed the following deprecated attributes:
 
 As well as the bi-directional stylings and the bindings stylings. I never make use of those properties so they are best left to the visual agent rather than me.
 
-I removed the [<abbr title="Cascading Style Sheets" class="initialism">C.S.S.</abbr> Selectors Level 4 modifier for ASCII case-insensitive attribute values](selection]https://drafts.csswg.org/selectors-4/#attribute-case) since [attributes are case-sensitive in <abbr title="eXtensible Hypertext Mark-up Language" class="initialism">X.H.T.M.L.</abbr>](https://www.w3.org/TR/xhtml1/#h-4.2)
+I removed the [<abbr title="Cascading Style Sheets" class="initialism">C.S.S.</abbr> Selectors Level 4 modifier for ASCII case-insensitive attribute values selection](https://drafts.csswg.org/selectors-4/#attribute-case) since [attributes are case-sensitive in <abbr title="eXtensible Hypertext Mark-up Language" class="initialism">X.H.T.M.L.</abbr>](https://www.w3.org/TR/xhtml1/#h-4.2)
 
 ## Changes and additions
 
