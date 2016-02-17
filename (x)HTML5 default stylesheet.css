@@ -430,7 +430,7 @@ tfoot[hidden],
 tr[hidden],
 td[hidden],
 th[hidden] {
-	visibility : collapse;
+	visibility : collapse
 }
 
 table {
