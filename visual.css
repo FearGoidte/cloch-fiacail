@@ -53,7 +53,6 @@ p,
 pre {
 	margin-bottom : 1em;
 	margin-top : 1em
-
 }
 
 blockquote,
@@ -65,6 +64,7 @@ figure {
 address {
 	font-style : italic
 }
+
 pre {
 	font-family : monospace;
 	white-space : pre
@@ -470,11 +470,6 @@ tbody,
 tfoot,
 tr {
 	border-color : inherit
-}
-
-td[nowrap],
-th[nowrap] {
-	white-space : nowrap
 }
 
 /* 10.3.11 Form controls */

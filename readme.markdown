@@ -59,9 +59,10 @@ I have removed the following deprecated or non-standard attributes:
 * `align`,
 * `border`,
 * `clear`,
-* `color`
+* `color`,
 * `frame`,
 * `noshade`,
+* `nowrap`,
 * `rules`, and
 * `valign`.
 
