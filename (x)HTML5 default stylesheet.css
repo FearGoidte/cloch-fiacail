@@ -145,12 +145,12 @@ del {
 	text-decoration : line-through
 }
 
-q::before {
-	content : open-quote
-}
-
 q::after {
 	content : close-quote
+}
+
+q::before {
+	content : open-quote
 }
 
 br {
@@ -181,6 +181,20 @@ br[clear=right] {
 br[clear=all],
 br[clear=both] {
 	clear : both
+}
+
+blockquote mark {
+	background-color : inherit;
+	color : inherit;
+	font-style : italic
+}
+
+blockquote mark::after
+	content : ']'
+}
+
+blockquote mark::before {
+	content : '['
 }
 
 /* 10.3.6 Quotes */
