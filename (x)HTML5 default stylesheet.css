@@ -829,7 +829,7 @@ hr[color], hr[noshade] {
 
 /* 10.3.13 The fieldset and legend elements */
 fieldset {
-	border : groove 2px ThreeDFace;
+	border : groove 2px;
 	margin-left : 2px;
 	margin-right : 2px;
 	padding : .35em .625em .75em
