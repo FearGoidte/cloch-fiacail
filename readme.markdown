@@ -59,8 +59,9 @@ I have removed the following deprecated attributes:
 * `align`,
 * `border`,
 * `clear`.
-* `frame`, and
-* `rules`.
+* `frame`,
+* `rules`, and
+* `valign`.
 
 ### Other deletions
 

@@ -472,42 +472,6 @@ tr {
 	border-color : inherit
 }
 
-thead[valign=top],
-tbody[valign=top],
-tfoot[valign=top],
-tr[valign=top],
-td[valign=top],
-th[valign=top] {
-	vertical-align : top
-}
-
-thead[valign=middle],
-tbody[valign=middle],
-tfoot[valign=middle],
-tr[valign=middle],
-td[valign=middle],
-th[valign=middle] {
-	vertical-align : middle
-}
-
-thead[valign=bottom],
-tbody[valign=bottom],
-tfoot[valign=bottom],
-tr[valign=bottom],
-td[valign=bottom],
-th[valign=bottom] {
-	vertical-align : bottom
-}
-
-thead[valign=baseline],
-tbody[valign=baseline],
-tfoot[valign=baseline],
-tr[valign=baseline],
-td[valign=baseline],
-th[valign=baseline] {
-	vertical-align : baseline
-}
-
 td[nowrap],
 th[nowrap] {
 	white-space : nowrap
