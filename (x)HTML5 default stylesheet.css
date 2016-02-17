@@ -351,7 +351,8 @@ ul ul ul {
 	list-style-type : square
 }
 
-ol[type=1], li[type=1] {
+ol[type="1"],
+li[type="1"] {
 	list-style-type : decimal
 }
 
