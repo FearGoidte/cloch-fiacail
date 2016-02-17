@@ -546,72 +546,6 @@ table[rules=all] > tfoot > tr > th {
 	border-color : black;
 }
 
-table[align=left] {
-	float : left
-}
-
-table[align=right] {
-	float : right
-}
-
-table[align=center] {
-	margin-left : auto;
-	margin-right : auto
-}
-
-thead[align=absmiddle],
-tbody[align=absmiddle],
-tfoot[align=absmiddle],
-tr[align=absmiddle],
-td[align=absmiddle],
-th[align=absmiddle] {
-	text-align : center
-}
-
-caption[align=bottom] {
-	caption-side : bottom
-}
-
-p[align=left],
-h1[align=left],
-h2[align=left],
-h3[align=left],
-h4[align=left],
-h5[align=left],
-h6[align=left] {
-	text-align : left
-}
-
-p[align=right],
-h1[align=right],
-h2[align=right],
-h3[align=right],
-h4[align=right],
-h5[align=right],
-h6[align=right] {
-	text-align: right
-}
-
-p[align=center],
-h1[align=center],
-h2[align=center],
-h3[align=center],
-h4[align=center],
-h5[align=center],
-h6[align=center] {
-	text-align: center
-}
-
-p[align=justify],
-h1[align=justify],
-h2[align=justify],
-h3[align=justify],
-h4[align=justify],
-h5[align=justify],
-h6[align=justify] {
-	text-align : justify
-}
-
 thead[valign=top],
 tbody[valign=top],
 tfoot[valign=top],
@@ -816,21 +750,6 @@ hr {
 	margin: .5em auto
 }
 
-hr[align=left] {
-	margin-left : 0;
-	margin-right : auto
-}
-
-hr[align=right] {
-	margin-left : auto;
-	margin-right : 0
-}
-
-hr[align=center] {
-	margin-left : auto;
-	margin-right : auto
-}
-
 hr[color], hr[noshade] {
 	border-style : solid
 }
@@ -861,34 +780,4 @@ video {
 /* 10.4.3 Attributes for embedded content and images */
 iframe[frameborder=no] {
 	border : none
-}
-
-:matches(embed, iframe, img, input[type=image], object)[align=left] {
-	float : left
-}
-
-:matches(embed, iframe, img, input[type=image], object)[align=right] {
-	float : right
-}
-
-:matches(embed, iframe, img, input[type=image], object)[align=top] {
-	vertical-align : top
-}
-
-:matches(embed, iframe, img, input[type=image], object)[align=baseline] {
-	vertical-align : baseline
-}
-
-:matches(embed, iframe, img, input[type=image], object)[align=texttop] {
-	vertical-align : text-top
-}
-
-:matches(embed, iframe, img, input[type=image], object)[align=absmiddle],
-embed[align=abscenter],
-:matches(embed, iframe, img, input[type=image], object)[align=abscenter] {
-	vertical-align : middle
-}
-
-:matches(embed, iframe, img, input[type=image], object)[align=bottom] {
-	vertical-align : bottom
 }
