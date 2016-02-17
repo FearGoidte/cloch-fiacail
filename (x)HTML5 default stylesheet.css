@@ -164,7 +164,7 @@ q::after {
 br {
 	content : '\A';
 	white-space : pre
-} /* this also has bidi implications */
+}
 
 nobr {
 	white-space : nowrap
@@ -172,7 +172,7 @@ nobr {
 
 wbr {
 	content : '\200B'
-} /* this also has bidi implications */
+}
 
 nobr wbr {
 	white-space : normal
@@ -190,81 +190,6 @@ br[clear=all i],
 br[clear=both i] {
 	clear : both
 }
-
-/* 10.3.5 Bidirectional text */
-[dir]:dir(ltr),
-bdi:dir(ltr),
-input[type=tel]:dir(ltr) {
-	direction : ltr
-}
-
-[dir]:dir(rtl),
-bdi:dir(rtl) {
-	direction : rtl
-}
-
-address,
-blockquote,
-div,
-figure,
-figcaption,
-footer,
-form,
-header,
-hr,
-legend,
-p,
-pre,
-article,
-aside,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-main,
-nav,
-section,
-table,
-caption,
-colgroup,
-col,
-thead,
-tbody,
-tfoot,
-tr,
-td,
-th,
-dd,
-dl,
-dt,
-ol,
-ul,
-li,
-bdi,
-output,
-[dir=ltr i],
-[dir=rtl i],
-[dir=auto i] {
-	unicode-bidi : isolate;
-}
-
-bdo,
-bdo[dir] {
-	unicode-bidi : isolate-override
-}
-
-textarea[dir=auto i],
-input[type=text][dir=auto i],
-input[type=search][dir=auto i],
-input[type=tel][dir=auto i],
-input[type=url][dir=auto i],
-input[type=email][dir=auto i],
-pre[dir=auto i] {
-	unicode-bidi : plaintext
-}
-/* the rules setting the 'content' property on br and wbr elements also has bidi implications */
 
 /* 10.3.6 Quotes */
 :root:lang(en),
@@ -287,42 +212,42 @@ section {
 }
 
 h1 {
-	font-size : 2.00em;
+	font-size : 2em;
 	font-weight : bold;
-	margin-bottom : 0.67em;
-	margin-top : 0.67em
+	margin-bottom : .67em;
+	margin-top : .67em
 }
 
 h2 {
 	font-size : 1.50em;
 	font-weight : bold;
-	margin-bottom : 0.83em;
-	margin-top : 0.83em
+	margin-bottom : .83em;
+	margin-top : .83em
 }
 
 h3 {
 	font-size : 1.17em;
 	font-weight : bold;
-	margin-bottom : 1.00em;
-	margin-top : 1.00em
+	margin-bottom : 1em;
+	margin-top : 1em
 }
 
 h4 {
-	font-size : 1.00em;
+	font-size : 1em;
 	font-weight : bold;
 	margin-bottom : 1.33em;
 	margin-top : 1.33em
 }
 
 h5 {
-	font-size : 0.83em;
+	font-size : .83em;
 	font-weight : bold;
 	margin-bottom : 1.67em;
 	margin-top : 1.67em
 }
 
 h6 {
-	font-size : 0.67em;
+	font-size : .67em;
 	font-weight : bold;
 	margin-bottom : 2.33em;
 	margin-top : 2.33em
@@ -330,29 +255,29 @@ h6 {
 
 x h1 {
 	font-size : 1.50em;
-	margin-bottom : 0.83em;
-	margin-top : 0.83em
+	margin-bottom : .83em;
+	margin-top : .83em
 }
 
 x x h1 {
 	font-size : 1.17em;
-	margin-bottom : 1.00em;
-	margin-top : 1.00em
+	margin-bottom : 1em;
+	margin-top : 1em
 }
 
 x x x h1 {
-	font-size : 1.00em;
+	font-size : 1em;
 	margin-bottom : 1.33em;
 	margin-top : 1.33em
 }
 
 x x x x h1 {
-	font-size : 0.83em;
+	font-size : .83em;
 	margin-bottom : 1.67em;
 	margin-top : 1.67em
 }
 x x x x x h1 {
-	font-size : 0.67em;
+	font-size : .67em;
 	margin-bottom : 2.33em;
 	margin-top : 2.33em
 }
@@ -392,12 +317,12 @@ ul ul {
 
 dd {
 	margin-left : 40px
-} /* LTR-specific: use 'margin-right' for rtl elements */
+}
 
 ol,
 ul {
 	padding-left : 40px
-} /* LTR-specific: use 'padding-right' for rtl elements */
+}
 
 ol {
 	list-style-type : decimal
@@ -874,7 +799,7 @@ hr {
 	border-style : inset;
 	border-width : 1px;
 	color : gray;
-	margin: 0.5em auto
+	margin: .5em auto
 }
 
 hr[align=left] {
@@ -901,7 +826,7 @@ fieldset {
 	border : groove 2px ThreeDFace;
 	margin-left : 2px;
 	margin-right : 2px;
-	padding : 0.35em 0.625em 0.75em
+	padding : .35em .625em .75em
 }
 
 legend {
