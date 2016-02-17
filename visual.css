@@ -510,10 +510,6 @@ hr {
 	margin: .5em auto
 }
 
-hr[color], hr[noshade] {
-	border-style : solid
-}
-
 /* 10.3.13 The fieldset and legend elements */
 fieldset {
 	border : groove 2px;
