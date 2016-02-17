@@ -35,7 +35,6 @@ body {
 /* 10.3.3 Flow content */
 address,
 blockquote,
-center,
 div,
 figure,
 figcaption,
@@ -259,7 +258,6 @@ bdi:dir(rtl) {
 
 address,
 blockquote,
-center,
 div,
 figure,
 figcaption,
