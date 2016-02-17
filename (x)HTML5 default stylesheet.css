@@ -43,7 +43,6 @@ form,
 header,
 hr,
 legend,
-listing,
 p,
 plaintext,
 pre,
@@ -53,7 +52,6 @@ xmp {
 
 blockquote,
 figure,
-listing,
 p,
 plaintext,
 pre,
@@ -72,7 +70,6 @@ figure {
 address {
 	font-style : italic
 }
-listing,
 plaintext,
 pre,
 xmp {
@@ -266,7 +263,6 @@ form,
 header,
 hr,
 legend,
-listing,
 p,
 plaintext,
 pre,
