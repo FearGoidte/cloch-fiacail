@@ -44,16 +44,14 @@ header,
 hr,
 legend,
 p,
-pre,
-xmp {
+pre {
 	display : block
 }
 
 blockquote,
 figure,
 p,
-pre,
-xmp {
+pre {
 	margin-bottom : 1em;
 	margin-top : 1em
 
@@ -68,8 +66,7 @@ figure {
 address {
 	font-style : italic
 }
-pre,
-xmp {
+pre {
 	font-family : monospace;
 	white-space : pre
 }
@@ -262,7 +259,6 @@ hr,
 legend,
 p,
 pre,
-xmp,
 article,
 aside,
 h1,
