@@ -116,10 +116,7 @@ sup {
 	text-decoration : underline
 }
 
-a:link[rel~=help],
-a:visited[rel~=help],
-area:link[rel~=help],
-area:visited[rel~=help] {
+[rel~=help] {
 	cursor : help
 }
 
