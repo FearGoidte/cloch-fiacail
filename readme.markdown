@@ -54,12 +54,14 @@ I have removed the Ruby elements:
 
 ### Attributes
 
-I have removed the following deprecated attributes:
+I have removed the following deprecated or non-standard attributes:
 
 * `align`,
 * `border`,
-* `clear`.
+* `clear`,
+* `color`
 * `frame`,
+* `noshade`,
 * `rules`, and
 * `valign`.
 
