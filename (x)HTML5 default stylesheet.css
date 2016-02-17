@@ -851,10 +851,10 @@ video {
 }
 
 /* 10.4.3 Attributes for embedded content and images */
-iframe[frameborder=0],
 iframe[frameborder=no] {
 	border : none
 }
+
 :matches(embed, iframe, img, input[type=image], object)[align=left] {
 	float : left
 }
