@@ -76,6 +76,8 @@ I removed the [<abbr title="Cascading Style Sheets" class="initialism">C.S.S.</a
 
 Added ‘editor’-style formatting for `mark` elements within a `blockquote`.
 
+Reformatted the `hr` element to display an [asterism](https://en.wikipedia.org/wiki/Asterism_%28typography%29) with a faded line background.
+
 ## Copyright
 
 This work, such as it is, is free to use with or without attribution and under any terms that do not obligate me.
