@@ -10,7 +10,6 @@ head,
 link,
 meta,
 param,
-rp,
 script,
 source,
 style,
@@ -108,39 +107,6 @@ sub,
 sup {
 	font-size : smaller;
 	line-height : normal
-}
-
-ruby {
-	display : ruby
-}
-
-rb {
-	display : ruby-base;
-	white-space : nowrap
-}
-
-rt {
-    display : ruby-text;
-    font-size : 50%;
-    font-variant-east-asian : ruby;
-    text-emphasis : none;
-    white-space : nowrap
-}
-
-rbc {
-	display : ruby-base-container
-}
-
-rtc  {
-	display : ruby-text-container
-}
-
-ruby,
-rb,
-rt,
-rbc,
-rtc {
-	unicode-bidi : isolate
 }
 
 :link {
