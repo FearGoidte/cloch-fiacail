@@ -8,7 +8,7 @@
 		<style media="screen" type="text/css">
 		<![CDATA[
 			html {
-				background : linear-gradient(rgb(217,234,243),rgb(250,250,250) 8%);/* Light blue to off-white */
+				background : rgb(250, 250, 250) linear-gradient(rgb(217, 234, 243),rgb(250, 250, 250) 8%);/* Light blue to off-white */
 				background-size : 100% 1.4em
 			}
 		]]>
@@ -30,7 +30,7 @@
 		<h2 id="lists">Lists</h2>
 		<h3>Ordered list</h3>
 		<h4>A simple ordered list</h4>
-		<ol>
+		<ol reversed="reversed">
 			<li>Et ille ridens: Video, inquit, quid agas;</li>
 			<li>Nec tamen ille erat sapiens quis enim hoc aut quando aut ubi aut unde?</li>
 			<li>Hoc loco tenere se Triarius non potuit.</li>
@@ -40,7 +40,7 @@
 			<li>Quis Aristidem non mortuum diligit?</li>
 		</ol>
 		<h4>Ordered lists, nest five deep</h4>
-				<ol>
+			<ol>
 				<li>Est autem officium, quod ita factum est, ut eius facti probabilis ratio reddi possit.</li>
 				<li>Hoc loco tenere se Triarius non potuit:
 						<ol>
@@ -84,6 +84,20 @@
 				<li>Quid sequatur, quid repugnet, vident.</li>
 				<li>Miserum hominem! Si dolor summum malum est, dici aliter non potest.</li>
 			</ol>
+		<h4>Ordered list within an unordered list</h4>
+		<ul>
+			<li>Audeo dicere, inquit.</li>
+			<li>Nobis Heracleotes ille Dionysius flagitiose descivisse videtur a Stoicis propter oculorum dolorem.
+				<ol>
+					<li>Audeo dicere, inquit.</li>
+					<li>Nobis Heracleotes ille Dionysius flagitiose descivisse videtur a Stoicis propter oculorum dolorem.</li>
+					<li>An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit?</li>
+					<li>Primum divisit ineleganter;</li>
+				</ol>
+			</li>
+			<li>An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit?</li>
+			<li>Primum divisit ineleganter;</li>
+		</ul>
 		<h4>A simple un-ordered list</h4>
 		<ul>
 			<li>Audeo dicere, inquit.</li>
@@ -136,6 +150,20 @@
 			<li>Negat esse eam, inquit, propter se expetendam.</li>
 			<li>Quamquam te quidem video minime esse deterritum.</li>
 		</ul>
+		<h4>Unordered list within an ordered list</h4>
+		<ol>
+			<li>Audeo dicere, inquit.</li>
+			<li>Nobis Heracleotes ille Dionysius flagitiose descivisse videtur a Stoicis propter oculorum dolorem.
+				<ul>
+					<li>Audeo dicere, inquit.</li>
+					<li>Nobis Heracleotes ille Dionysius flagitiose descivisse videtur a Stoicis propter oculorum dolorem.</li>
+					<li>An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit?</li>
+					<li>Primum divisit ineleganter;</li>
+				</ul>
+			</li>
+			<li>An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit?</li>
+			<li>Primum divisit ineleganter;</li>
+		</ol>
 		<h3>A definition list</h3>
 		<dl>
 			<dt>First term</dt>
@@ -151,5 +179,47 @@
 			<dt><dfn>Haec dicuntur inconstantissime.</dfn></dt>
 			<dd>Nam si amitti vita beata potest, beata esse non potest.</dd>
 		</dl>
+		<h2>Tables</h2>
+		<p>Example taken from <cite><a href="http://accessibility.psu.edu/tablecomplexhtml">Tables for Data in <abbr title="Hypertext Mark-up Language" class="initialism">H.T.M.L.</abbr></a></cite></p>
+		<table>
+  			<caption>Colour names for black, white, red, blue, green, yellow in multiple languages, grouped by language family</caption>
+ 			<thead>
+				<tr>
+					<th id="fam">Family</th>
+				  	<th id="rmc" colspan="2">Romance Lang</th>
+				  	<th id="cel" colspan="2">Celtic</th>
+				</tr>
+				<tr>
+					<th id="hue">Colour</th>
+					<th headers="rmc" id="es">Spanish</th>
+					<th headers="rmc" id="fr">French</th>
+					<th headers="cel" id="ga">Irish</th>
+					<th headers="cel" id="cy">Welsh</th>
+				</tr>
+  			</thead>
+  			<tbody>
+				<tr>
+					<th headers="hue" id="G">Green</th>
+					<td xml:lang="es" headers="rmc es G">verde</td>
+					<td xml:lang="fr" headers="rmc fr G">vert</td>
+					<td xml:lang="ga" headers="cel ga G">glas</td>
+					<td xml:lang="cy" headers="cel cy G">gwyrdd</td>
+				</tr>
+				<tr>
+					<th headers="hue" id="B">Blue</th>
+					<td xml:lang="es" headers="rmc es B">azul</td>
+					<td xml:lang="fr" headers="rmc fr B">bleu</td>
+					<td xml:lang="ga" headers="cel ga B">gorm</td>
+					<td xml:lang="cy" headers="cel cy B">glas</td>
+				</tr>
+				<tr>
+					<th headers="hue" id="K">Black</th>
+					<td xml:lang="es" headers="rmc es K">negro</td>
+					<td xml:lang="fr" headers="rmc fr K">noir</td>
+					<td xml:lang="ga" headers="cel ga K">dubh</td>
+					<td xml:lang="cy" headers="cel cy K">du</td>
+				</tr>
+			</tbody>
+		</table>
 	</body>
 </html>

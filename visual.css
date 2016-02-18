@@ -31,6 +31,7 @@ body {
 	display : block
 }
 html {
+	background-color : rgb(250, 250, 250);
 	color : rgb(51,51,51);/* Very dark gray */
 	font : normal normal normal 125%/1.4 serif;
 	margin : 0;
@@ -282,97 +283,109 @@ ul {
 	display : block
 }
 
-li {
-	display : list-item
-}
-
 dl,
 ol,
 ul {
-	margin-bottom : 1.4rem;
-	margin-top : 1.4rem
+	margin : 1.4rem 0;
+	padding : 0
 }
 
-dl dl,
-dl ol,
-dl ul,
-ol dl,
-ol ol,
-ol ul,
-ul dl,
-ul ol,
-ul ul {
-	margin-bottom : 0;
- 	margin-top : 0
+li {
+	display : list-item;
+	list-style : none; /* Remove automatic markers */
+	position : relative /* Allow markers to be positioned relatively */
 }
 
-dd {
-	margin-left : 1.4rem
+:matches(dl, ol, ul) :matches(dl, ol, ul) { /* Remove vertical margins for nested lists */
+	margin : 0
 }
 
-ol,
-ul {
-	padding-left : 40px
+/*
+Lists
+*/
+
+/** Unordered lists **/
+:matches(ol, ul) > li > :matches(ol, ul) {
+	padding-left : 1.2rem /* Since the unordered markers are always one character wide, unordered lists have the same padding (regardless of depth) to create space for their markers */
 }
 
+li::before {
+	left : -1.2rem; /* Must be the same as the above nested ordered list margin */
+	vertical-align : text-bottom;
+	position : absolute
+}
+
+ul > li::before {
+	font-size : .8em;
+	top : .2em
+}
+
+ul > li::before {
+	content : "➢"
+}
+
+ul > li > ul > li::before {
+	content : "✽"
+}
+
+ul > li > ul > li > ul > li::before {
+	content : "✦"
+}
+
+ul > li > ul > li > ul > li > ul > li::before {
+	content : "✯"
+}
+
+ul > li > ul > li > ul > li > ul > li > ul > li::before {
+	content : "✤"
+}
+
+/** Ordered lists **/
 ol {
-	list-style-type : decimal
+	counter-reset : item
 }
 
-ul {
-	list-style-type : disc
+ol > li::before {
+	content : counter(item) ". ";
+	counter-increment : item;
+	letter-spacing : -.025em
 }
 
-ol ul,
-ul ul {
-	list-style-type : circle
+ol > li > ol > li::before {
+	content : counters(item, ".") ". "/* It is necessary to specify ‘counter’ for top level ordered lists then ‘counters’ for nested ordered lists to be able to display a properly numbered ordered list within an unordered list */
 }
 
-ol ol ul,
-ol ul ul,
-ul ol ul,
-ul ul ul {
-	list-style-type : square
+/* Since I am using decimal numbers, the counter increases in width for each depth of nesting. Therefore the padding and left offset needs to be increased for each depth. These rules only accommodate nesting lists down to five levels (the same depth as can be indicated by the heading levels). Greater list depths need additional rules or the markers and the list item content will collide. */
+ol > li > ol {
+	padding-left : 1.8rem
 }
 
-ol[type="1"],
-li[type="1"] {
-	list-style-type : decimal
+ol > li > ol > li > ol {
+	padding-left : 2.6rem
 }
 
-ol[type=a],
-li[type=a] {
-	list-style-type : lower-alpha
+ol > li > ol > li > ol > li > ol {
+	padding-left : 3.4rem
 }
 
-ol[type=A],
-li[type=A] {
-	list-style-type : upper-alpha
+ol > li > ol > li > ol > li > ol > li ol {
+	padding-left : 4rem
 }
 
-ol[type=i],
-li[type=i] {
-	list-style-type : lower-roman
+ol > li > ol > li::before {
+	left : -1.8rem
 }
 
-ol[type=I],
-li[type=I] {
-	list-style-type : upper-roman
+ol > li > ol > li > ol > li::before {
+	left : -2.6rem
 }
 
-ul[type=disc],
-li[type=disc] {
-	list-style-type : disc
+ol > li > ol > li > ol > li> ol > li::before {
+	left : -3.4rem
 }
 
-ul[type=circle],
-li[type=circle] {
-	list-style-type : circle
-}
-
-ul[type=square],
-li[type=square] {
-	list-style-type : square
+ol > li > ol > li > ol > li> ol > li > ol > li::before {
+	left : -4rem
 }
 
 /* 10.3.9 Tables */
@@ -509,7 +522,7 @@ hr {
 }
 
 hr::before {
-	background-color : white;
+	background-color : rgb(250, 250, 250); /* Same as html’s background colour */
 	content : "⁂";
 	position : relative;
 	top : -.5em
