@@ -129,7 +129,7 @@ sup {
 sub,
 sup {
 	font-size : smaller;
-	line-height : normal
+	line-height : 0 /* Elements that have a ‘vertical-align’ other than baseline or a position value will expand their parent element’s line-height unless their own line-height is set to ‘0’ */
 }
 
 :link {
