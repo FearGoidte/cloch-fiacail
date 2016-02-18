@@ -22,6 +22,7 @@
 				<li><a href="#nav_horizontal_rule">Horizontal rule</a></li>
 				<li><a href="#nav_lists">Lists</a></li>
 				<li><a href="#nav_tables">Tables</a></li>
+				<li><a href="#nav_phrasing_content">Phrasing content</a></li>
 			</ol>
 		</nav>
 		<h2 id="nav_horizontal_rule">Horizontal rule</h2>
@@ -225,5 +226,24 @@
 		</table>
 		<h2>Phrase elements</h2>
 		<p>This is a paragraph contain the abbreviation for <abbr title="Hypertext Mark-up Language" class="initialism">H.T.M.L.</abbr> and not much else.</p>
+		<h2 id="nav_phrasing_content">Phrasing content</h2>
+		<p>Phrasing styles should stack nicely since many of them will stack regardless.</p>
+		<h3>Anchors away—links</h3>
+		<p>This paragraph contains first <a href="#edits">a link</a> to another part of this document, then a spoof link to <a href="bob.xhtml">another document</a> local to this one, then a link to a document on another server on <span xml:lang="ang">Þe eald</span> <a href="http://www.w3c.org">world wide web</a>.</p>
+		<h3>Giving weight—<code>cite</code>, <code>em</code>, <code>mark</code>, and <code>strong</code></h3>
+		<p>This sentence contains <em>an emphasized phrase</em>. This sentence contains <strong>a strongly emphasized</strong> phrase. This sentence contains <em>a strongly emphasized bit <strong>within</strong> an emphasized phrase</em>. This sentence contains <strong>an emphasized bit <em>within</em> a strongly phrase</strong>.</p>
+		<p>This sentence <strong>contains some <strong>strong text</strong> within</strong> some other strong text.</p>
+		<p>This sentence <em>contains some <em>emphasised text</em> within</em> some other emphasised text.</p>
+		<p><cite>Citations</cite> are often styled the same as emphasized phrases so <em>this emphasized phrase contains a <cite>citation</cite> to see if we can still notice it.</em></p>
+		<p>Some of the text in this <mark>paragraph is marked</mark>, can you spot which.</p>
+		<h4>A longer run of marked text</h4>
+		<p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus <mark>elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra</mark> quis, feugiat a, tellus.</p>
+		<h3>In brief—abbreviations</h3>
+		<p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, <abbr title="Blow It Out Your Input Output Port">B.I.O.Y.I.O.P.</abbr> viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p>
+		<h3><q>Time is never time at all</q></h3>
+		<p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, <time>2014</time> viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p>
+		<h3><samp>I'm sorry, Dave. &#8203;I’m afraid I can’t do that</samp>—code</h3>
+		<p>The following paragraph contains code:</p>
+		<p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, <code>viverra quis, feugiat</code> a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p>
 	</body>
 </html>

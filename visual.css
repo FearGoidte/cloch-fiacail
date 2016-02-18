@@ -106,9 +106,16 @@ var {
 	font-style : italic
 }
 
-strong {
-	font-weight : bolder
+strong,
+em em {
+	font-size : .9em;
+	font-weight : inherit; /* Nullify common user-agent bold default */
+	text-transform : uppercase
 }
+
+strong strong {
+	font-size : inherit
+	}
 
 code,
 kbd,
@@ -570,6 +577,12 @@ legend {
 /* 10.4.1 Embedded content */
 iframe {
 	border : 2px inset
+}
+
+img,
+object {
+	max-width : 100%
+	height : auto
 }
 
 video {
