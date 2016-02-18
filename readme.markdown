@@ -83,7 +83,7 @@ Removed underlines from abbreviations since their title attributes cannot be acc
 
 ### Headings
 
-Removed the rules for nested `h1` headings for sections since whilst, it is valid use under the <abbr title="Hypertext Mark-up Language" class="initialism">H.T.M.L.</abbr>5 Recommendation, it is poorly supported and I think it better to follow the I.S.O. standard for headings.
+Removed the rules for nested `h1` headings for sections since whilst, it is valid use under the <abbr title="Hypertext Mark-up Language" class="initialism">H.T.M.L.</abbr>5 Recommendation, it is poorly supported and I think it better to follow the [User’s Guide to <abbr title="International Organization for Standardization" class="initialism">I.S.O.</abbr>/<abbr title="International Electrotechnical Commission">I.E.C.</abbr> 15445:2000 HyperText Markup Language](https://www.cs.tcd.ie/misc/15445/UG.HTML#H1.NEST).
 
 Also switched `h1`-`h6`, `header`, and `th` from bold to a different typeface.
 
