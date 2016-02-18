@@ -390,7 +390,8 @@ ol > li > ol > li > ol > li> ol > li > ol > li::before {
 
 /* 10.3.9 Tables */
 table {
-	display : table
+	display : table;
+	margin : 1.4rem 0 1.4rem -.5rem
 }
 
 caption {
@@ -445,15 +446,15 @@ th[hidden] {
 }
 
 table {
-	border-collapse : separate;
-	border-spacing : 2px;
+	border-collapse : collapse;
 	box-sizing : border-box;
+	border-spacing : 0;
 	text-indent : initial
 }
 
 td,
 th {
-	padding : 1px
+	padding : 0 .5em
 }
 
 th {
