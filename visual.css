@@ -235,46 +235,42 @@ section {
 	margin-top : 1.4rem
 }
 
+h1,
+h2,
+h3 {
+	line-height : 2.8rem;
+	margin : 2.8rem 0 1.4rem 0
+}
+
 h1 {
-	font-size : 2em;
-	font-weight : bold;
-	margin-bottom : .67em;
-	margin-top : .67em
+	font-size : 2.55em;
 }
 
 h2 {
-	font-size : 1.50em;
-	font-weight : bold;
-	margin-bottom : .83em;
-	margin-top : .83em
+	font-size : 2.35em
 }
 
 h3 {
-	font-size : 1.17em;
-	font-weight : bold;
-	margin-bottom : 1em;
-	margin-top : 1em
+	font-size : 2.15em
+}
+
+h4,
+h5,
+h6 {
+	line-height : 1.4rem;
+	margin : 1.4rem 0 0
 }
 
 h4 {
-	font-size : 1em;
-	font-weight : bold;
-	margin-bottom : 1.33em;
-	margin-top : 1.33em
+	font-size : 1.3em
 }
 
 h5 {
-	font-size : .83em;
-	font-weight : bold;
-	margin-bottom : 1.67em;
-	margin-top : 1.67em
+	font-size : 1.15em
 }
 
 h6 {
-	font-size : .67em;
-	font-weight : bold;
-	margin-bottom : 2.33em;
-	margin-top : 2.33em
+	font-size : inherit /* Same as ancestor’s font */
 }
 
 /* 10.3.8 Lists */
