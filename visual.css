@@ -48,9 +48,7 @@ blockquote,
 div,
 figure,
 figcaption,
-footer,
 form,
-header,
 hr,
 legend,
 p,
@@ -67,9 +65,7 @@ figcaption {
 blockquote,
 div,
 figure,
-footer,
 form,
-header,
 hr,
 legend,
 pre {
@@ -216,15 +212,27 @@ blockquote mark::before {
 /* 10.3.7 Sections and headings */
 article,
 aside,
+footer,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
+header,
 nav,
 section {
 	display : block
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+	margin-bottom : 1.4rem;
+	margin-top : 1.4rem
 }
 
 h1 {
