@@ -119,11 +119,11 @@ sup {
 }
 
 :link {
-	color : #0000EE
+	color : #0000EE /* Blue */
 }
 
 :visited {
-	color : #551A8B
+	color : #551A8B /* Purple */
 }
 
 :link,
