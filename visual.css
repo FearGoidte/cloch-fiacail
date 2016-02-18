@@ -58,18 +58,29 @@ pre {
 	display : block
 }
 
-blockquote,
-figure,
+address,
 p,
+figcaption {
+	margin-bottom : 0;
+	margin-top : 0
+}
+blockquote,
+div,
+figure,
+footer,
+form,
+header,
+hr,
+legend,
 pre {
-	margin-bottom : 1em;
-	margin-top : 1em
+	margin-bottom : 1.4rem;
+	margin-top : 1.4rem
 }
 
 blockquote,
 figure {
-	margin-left : 40px;
-	margin-right : 40px
+	margin-left : 1.4rem;
+	margin-right : 1.4rem
 }
 
 address {
@@ -303,8 +314,8 @@ li {
 dl,
 ol,
 ul {
-	margin-bottom : 1em;
-	margin-top : 1em
+	margin-bottom : 1.4rem;
+	margin-top : 1.4rem
 }
 
 dl dl,
@@ -321,7 +332,7 @@ ul ul {
 }
 
 dd {
-	margin-left : 40px
+	margin-left : 1.4rem
 }
 
 ol,
