@@ -277,35 +277,6 @@ h6 {
 	margin-top : 2.33em
 }
 
-:matches(article, aside, nav, section) h1 {
-	font-size : 1.50em;
-	margin-bottom : .83em;
-	margin-top : .83em
-}
-
-:matches(article, aside, nav, section) :matches(article, aside, nav, section) h1 {
-	font-size : 1.17em;
-	margin-bottom : 1em;
-	margin-top : 1em
-}
-
-:matches(article, aside, nav, section) :matches(article, aside, nav, section) :matches(article, aside, nav, section) h1 {
-	font-size : 1em;
-	margin-bottom : 1.33em;
-	margin-top : 1.33em
-}
-
-:matches(article, aside, nav, section) :matches(article, aside, nav, section) :matches(article, aside, nav, section) :matches(article, aside, nav, section) h1 {
-	font-size : .83em;
-	margin-bottom : 1.67em;
-	margin-top : 1.67em
-}
-:matches(article, aside, nav, section) :matches(article, aside, nav, section) :matches(article, aside, nav, section) :matches(article, aside, nav, section) :matches(article, aside, nav, section) h1 {
-	font-size : .67em;
-	margin-bottom : 2.33em;
-	margin-top : 2.33em
-}
-
 /* 10.3.8 Lists */
 dd,
 dl,
