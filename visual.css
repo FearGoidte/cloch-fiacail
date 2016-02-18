@@ -30,6 +30,17 @@ html,
 body {
 	display : block
 }
+html {
+	color : rgb(51,51,51);/* Very dark gray */
+	font : normal normal normal 125%/1.4 serif;
+	margin : 0;
+	padding : 0
+}
+body {
+	margin : 0 auto;
+	max-width : 40em; /* This is for a single column, can be changed for wider displays */
+	padding : 1.4em /* Padding sufficient to create space on the left for list markers */
+	}
 
 /* 10.3.3 Flow content */
 address,
@@ -62,12 +73,14 @@ figure {
 }
 
 address {
-	font-style : italic
+	font-family : inherit; /* Nullify common user-agent monospace default */
+	font-style : inherit /* Nullify common user-agent italic default */
 }
 
 pre {
-	font-family : monospace;
-	white-space : pre
+	font-family : inherit; /* Nullify common user-agent monospace default pre might be used for  */
+	white-space : pre-line; /* Preserve whitespace whilst preventing element from stretching width of parent element */
+	word-break : normal /* Preserve whitespace whilst preventing element from stretching width of parent element */
 }
 
 /* 10.3.4 Phrasing content */
@@ -86,7 +99,9 @@ strong {
 code,
 kbd,
 samp {
-	font-family : monospace
+	font-family : monospace;
+	white-space : pre-line; /* Preserve whitespace whilst preventing element from stretching width of parent element */
+	word-break : normal /* Preserve whitespace whilst preventing element from stretching width of parent element */
 }
 
 sub {
@@ -484,7 +499,8 @@ keygen {
 }
 
 textarea {
-	white-space : pre-wrap
+	white-space : pre-line; /* Preserve whitespace whilst preventing element from stretching width of parent element */
+	word-break : normal /* Preserve whitespace whilst preventing element from stretching width of parent element */
 }
 
 input[type="radio"],
