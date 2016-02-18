@@ -80,6 +80,10 @@ Reformatted the `hr` element to display an [asterism](https://en.wikipedia.org/w
 
 I have removed the rules for nested `h1` headings for sections since whilst it is valid use under the <abbr title="Hypertext Mark-up Language" class="initialism">H.T.M.L.</abbr>5 Recommendation, it is poorly supported and I think it better to follow the ISO standard for headings.
 
+### Lists
+
+Replaced automatic lists with lists using the `::before` pseudo elements nested up to five levels deep.
+
 ## Copyright
 
 This work, such as it is, is free to use with or without attribution and under any terms that do not obligate me.
