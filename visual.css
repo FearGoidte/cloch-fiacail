@@ -57,6 +57,12 @@ pre {
 	display : block
 }
 
+address + p,
+p + address,
+p + p{
+	text-indent : 1.4em
+}
+
 address,
 p,
 figcaption {
@@ -308,7 +314,15 @@ li {
 	position : relative /* Allow markers to be positioned relatively */
 }
 
-:matches(dl, ol, ul) :matches(dl, ol, ul) { /* Remove vertical margins for nested lists */
+dl dl,
+dl ol,
+dl ul,
+ol dl,
+ol ol,
+ol ul,
+ul dl,
+ul ol,
+ul ul { /* Remove vertical margins for nested lists */
 	margin : 0
 }
 
@@ -317,7 +331,9 @@ Lists
 */
 
 /** Unordered lists **/
-:matches(ol, ul) > li > :matches(ol, ul) {
+ol > li > ul,
+ul > li > ol,
+ul > li > ul {
 	padding-left : 1.2rem /* Since the unordered markers are always one character wide, unordered lists have the same padding (regardless of depth) to create space for their markers */
 }
 
