@@ -38,9 +38,9 @@ html {
 	padding : 0
 }
 body {
-	margin : 0 auto;
+	margin : 1.4rem auto;
 	max-width : 40em; /* This is for a single column, can be changed for wider displays */
-	padding : 1.4em /* Padding sufficient to create space on the left for list markers */
+	padding : 0 1.4em /* Padding sufficient to create space on the left for list markers */
 	}
 
 /* 10.3.3 Flow content */
