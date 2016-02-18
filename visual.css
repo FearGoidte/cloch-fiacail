@@ -238,6 +238,18 @@ section {
 
 h1,
 h2,
+h3,
+h4,
+h5,
+h6,
+header,
+th {
+	font-family : sans-serif;
+	font-weight : inherit
+}
+
+h1,
+h2,
 h3 {
 	line-height : 2.8rem;
 	margin : 2.8rem 0 1.4rem 0
@@ -455,10 +467,6 @@ table {
 td,
 th {
 	padding : 0 .5em
-}
-
-th {
-	font-weight : bold
 }
 
 thead,
