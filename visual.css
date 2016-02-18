@@ -158,8 +158,7 @@ mark {
 	color : black
 } /* this color is just a suggestion and can be changed based on implementation feedback */
 
-abbr[title],
-acronym[title] {
+abbr[title] {
 	text-decoration : dotted underline
 }
 

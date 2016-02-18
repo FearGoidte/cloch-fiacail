@@ -15,6 +15,7 @@ Gradually I will make additions and changes based on use.
 
 I have removed the items obsolete in <abbr title="Hypertext Mark-up Language" class="initialism">H.T.M.L.</abbr>5:
 
+* `acronym`,
 * `applet`,
 * `basefont`,
 * `big`,
