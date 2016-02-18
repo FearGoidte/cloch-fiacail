@@ -210,8 +210,8 @@ blockquote mark::before {
 /* 10.3.6 Quotes */
 :root:lang(en),
 :not(:lang(en)) > :lang(en) {
-	quotes : '\201c' '\201d' '\2018' '\2019'
-} /* “ ” ‘ ’ */
+	quotes : '“' '”' "‘" "’"
+}
 
 /* 10.3.7 Sections and headings */
 article,
