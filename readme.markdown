@@ -79,7 +79,13 @@ Added ‘editor’-style formatting for `mark` elements within a `blockquote`.
 
 Reformatted the `hr` element to display an [asterism](https://en.wikipedia.org/wiki/Asterism_%28typography%29) with a faded line background.
 
-I have removed the rules for nested `h1` headings for sections since whilst it is valid use under the <abbr title="Hypertext Mark-up Language" class="initialism">H.T.M.L.</abbr>5 Recommendation, it is poorly supported and I think it better to follow the ISO standard for headings.
+Removed underlines from abbreviations since their title attributes cannot be accessed on many touch devices. Added the help cursor for keyboard and mouse users.
+
+### Headings
+
+Removed the rules for nested `h1` headings for sections since whilst, it is valid use under the <abbr title="Hypertext Mark-up Language" class="initialism">H.T.M.L.</abbr>5 Recommendation, it is poorly supported and I think it better to follow the I.S.O. standard for headings.
+
+Also switched `h1`-`h6`, `header`, and `th` from bold to a different typeface.
 
 ### Lists
 

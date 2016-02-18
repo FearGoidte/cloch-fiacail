@@ -145,6 +145,7 @@ sup {
 	text-decoration : underline
 }
 
+abbr[title],
 [rel~=help] {
 	cursor : help
 }
@@ -159,7 +160,7 @@ mark {
 } /* this color is just a suggestion and can be changed based on implementation feedback */
 
 abbr[title] {
-	text-decoration : dotted underline
+	text-decoration : inherit /* Nullify common user-agent dotted underline default */
 }
 
 ins {
@@ -539,7 +540,7 @@ button {
 /* 10.3.12 The hr element */
 hr {
 	background : linear-gradient(to right, rgba(255, 255, 255, 0)/* White */, #ccc/* Medium gray */, rgba(255, 255, 255, 0)/* White */);
-	border : none; /* Nullifies common user agent defaults */
+	border : none; /* Nullifies common user agent default */
 	height : .052em;
 	position : relative;
 	text-align : center
