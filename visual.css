@@ -296,7 +296,7 @@ h5 {
 }
 
 h6 {
-	font-size : inherit /* Same as ancestor’s font */
+	font-size : inherit /* Same as ancestor’s font-size */
 }
 
 /* 10.3.8 Lists */
