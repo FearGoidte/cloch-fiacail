@@ -426,7 +426,7 @@ ol > li > ol > li > ol > li> ol > li > ol > li::before {
 /* 10.3.9 Tables */
 table {
 	display : table;
-	margin : 1.4rem 0 1.4rem -.5rem
+	margin : 1.4rem 0 1.4rem -.5rem /* Minus margin offsets the ‘td’ and ‘th’ margins */
 }
 
 caption {
