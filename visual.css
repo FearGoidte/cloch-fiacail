@@ -92,7 +92,7 @@ address {
 }
 
 pre {
-	font-family : inherit; /* Nullify common user-agent monospace default pre might be used for */
+	font-family : inherit; /* Nullify common user-agent monospace default pre might be used for body text whose whitespace layout is significant such as some forms of poetry */
 	white-space : pre-line; /* Preserve whitespace whilst preventing element from stretching width of parent element */
 	word-break : normal /* Preserve whitespace whilst preventing element from stretching width of parent element */
 }
