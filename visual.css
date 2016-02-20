@@ -32,7 +32,7 @@ body {
 }
 html {
 	background-color : rgb(250, 250, 250);
-	color : rgb(51,51,51);/* Very dark gray */
+	color : rgb(51,51,51);/* Very dark grey */
 	font : normal normal normal 125%/1.4 serif;
 	margin : 0;
 	padding : 0
@@ -116,6 +116,17 @@ em em {
 strong strong {
 	font-size : inherit
 	}
+
+code {
+	background-color : rgba(0, 0, 0, 0.04) /* Light grey */
+}
+
+code,
+mark {
+	border-radius : .5em 2em .5em; /* Creates a slanted background to suggest a marker-pen has been dragged right to left across the text */
+	margin: 0 -.15em;/* Removes the horizontal space created by the following padding */
+	padding: 0 .15em/* Creates horizontal space so that the background colour expands outwards from the text */
+}
 
 code,
 kbd,
@@ -206,7 +217,9 @@ nobr wbr {
 blockquote mark {
 	background-color : inherit;
 	color : inherit;
-	font-style : italic
+	font-style : italic;
+	margin : initial; /* Reset the margins set on mark outside of blockquotes */
+	padding : initial /* Reset the padding set on mark outside of blockquotes */
 }
 
 blockquote mark::after {
@@ -546,7 +559,7 @@ button {
 
 /* 10.3.12 The hr element */
 hr {
-	background : linear-gradient(to right, rgba(255, 255, 255, 0)/* White */, #ccc/* Medium gray */, rgba(255, 255, 255, 0)/* White */);
+	background : linear-gradient(to right, rgba(255, 255, 255, 0)/* White */, #ccc/* Medium grey */, rgba(255, 255, 255, 0)/* White */);
 	border : none; /* Nullifies common user agent default */
 	height : .052em;
 	position : relative;
