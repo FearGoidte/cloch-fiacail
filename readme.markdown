@@ -1,4 +1,4 @@
-<h1 xml:lang="la">Ex nihilo</h1>
+<h1 xml:lang="la">ex·nihilo</h1>
 
 There are numerous ways to start a style sheet and numerous ways to organize them. Unfortunately there is no right way, and yet plenty of wrongs ones.
 
@@ -81,7 +81,7 @@ Reformatted the `hr` element to display an [asterism](https://en.wikipedia.org/w
 
 Removed underlines from abbreviations since their title attributes cannot be accessed on many touch devices. Added the help cursor for keyboard and mouse users.
 
-### Headings
+### Headings
 
 Removed the rules for nested `h1` headings for sections since whilst, it is valid use under the <abbr title="Hypertext Mark-up Language" class="initialism">H.T.M.L.</abbr>5 Recommendation, it is poorly supported and I think it better to follow the [User’s Guide to <abbr title="International Organization for Standardization" class="initialism">I.S.O.</abbr>/<abbr title="International Electrotechnical Commission">I.E.C.</abbr> 15445:2000 HyperText Markup Language](https://www.cs.tcd.ie/misc/15445/UG.HTML#H1.NEST).
 
