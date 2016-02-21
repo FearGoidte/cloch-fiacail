@@ -32,7 +32,7 @@ I have removed the items obsolete in <abbr title="Hypertext Mark-up Language" cl
 
 ### Styling elements
 
-I have also removed selectors for the ‘purely’ styling elements deprecated prior to <abbr title="Hypertext Mark-up Language" class="initialism">H.T.M.L.</abbr>5 and then reintroduced by that version an given a semantic garnish ([The <abbr title="Hypertext Mark-up Language" class="initialism">H.T.M.L.</abbr> 4.01 Font style elements](https://www.w3.org/TR/html401/present/graphics.html#h-15.2.1)):
+I have also removed selectors for the ‘purely’ styling elements deprecated prior to <abbr title="Hypertext Mark-up Language" class="initialism">H.T.M.L.</abbr>5 and then reintroduced by that version and given a semantic garnish ([The <abbr title="Hypertext Mark-up Language" class="initialism">H.T.M.L.</abbr> 4.01 Font style elements](https://www.w3.org/TR/html401/present/graphics.html#h-15.2.1)):
 
 * `b`,
 * `i`,
@@ -69,7 +69,7 @@ I have removed the following deprecated or non-standard attributes:
 
 ### Other deletions
 
-As well as the bi-directional stylings and the bindings stylings. I never make use of those properties so they are best left to the visual agent rather than me.
+The bi-directional stylings and the bindings stylings. I never make use of those properties so they are best left to the visual agent rather than me.
 
 I removed the [<abbr title="Cascading Style Sheets" class="initialism">C.S.S.</abbr> Selectors Level 4 modifier for ASCII case-insensitive attribute values selection](https://drafts.csswg.org/selectors-4/#attribute-case) since [attributes are case-sensitive in <abbr title="eXtensible Hypertext Mark-up Language" class="initialism">X.H.T.M.L.</abbr>](https://www.w3.org/TR/xhtml1/#h-4.2)
 
