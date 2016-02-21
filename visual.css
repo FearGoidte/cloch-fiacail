@@ -442,22 +442,19 @@ ol > li > ol > li > ol > li> ol > li > ol > li::before {
 	left : -4rem
 }
 
-.op-ls > li {
-	display : inline
+.op-ls li::after {
+	content:", "
 }
 
-.op-ls > li::after {/* Inline style Oxford comma list for list items which are children of ordered or unordered lists with the class name “op-ls” */
-	content : ", "
+.op-ls li:nth-last-child(2)::after {
+	content:" and "
 }
 
-.op-ls > li:last-child::after {
-	content : ""
+.op-ls li:nth-last-child(3) ~ li:nth-last-child(2)::after {
+	content:", and "
 }
 
-.op-ls > li:nth-last-child(2)::after {
-	content : ", and "
-}
-
+.op-ls > li:last-child::after,
 .op-ls > li:only-child::after {
 	content : ""
 }
