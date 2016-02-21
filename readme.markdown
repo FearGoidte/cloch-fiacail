@@ -91,6 +91,8 @@ Also switched `h1`-`h6`, `header`, and `th` from bold to a different typeface.
 
 Replaced automatic lists with lists using the `::before` pseudo elements nested up to five levels deep.
 
+Also added `.op-ls` class for inline [Oxford comma](https://en.wikipedia.org/wiki/Serial_comma) style lists.
+
 ## Copyright
 
 This work, such as it is, is free to use with or without attribution and under any terms that do not obligate me.
