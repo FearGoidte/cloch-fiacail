@@ -41,7 +41,7 @@ body {
 	margin : 1.4rem auto;
 	max-width : 40em; /* This is for a single column, can be changed for wider displays */
 	padding : 0 1.4em /* Padding sufficient to create space on the left for list markers */
-	}
+}
 
 /* 10.3.3 Flow content */
 address,
@@ -59,7 +59,7 @@ pre {
 
 address + p,
 p + address,
-p + p{
+p + p {
 	text-indent : 1.4em
 }
 
@@ -115,7 +115,7 @@ em em {
 
 strong strong {
 	font-size : inherit
-	}
+}
 
 code {
 	background-color : rgba(0, 0, 0, 0.04) /* Light grey */
@@ -288,7 +288,7 @@ h3 {
 }
 
 h1 {
-	font-size : 2.55em;
+	font-size : 2.55em
 }
 
 h2 {
@@ -406,7 +406,7 @@ ol > li::before {
 }
 
 ol > li > ol > li::before {
-	content : counters(item, ".") ". "/* It is necessary to specify ‘counter’ for top level ordered lists then ‘counters’ for nested ordered lists to be able to display a properly numbered ordered list within an unordered list */
+	content : counters(item, ".") ". " /* It is necessary to specify ‘counter’ for top level ordered lists then ‘counters’ for nested ordered lists to be able to display a properly numbered ordered list within an unordered list */
 }
 
 /* Since I am using decimal numbers, the counter increases in width for each depth of nesting. Therefore the padding and left offset needs to be increased for each depth. These rules only accommodate nesting lists down to five levels (the same depth as can be indicated by the heading levels). Greater list depths need additional rules or the markers and the list item content will collide. */
