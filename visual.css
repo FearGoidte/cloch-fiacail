@@ -458,7 +458,7 @@ ol > li > ol > li > ol > li> ol > li > ol > li::before {
 
 .op-ls > li:last-child::after,
 .op-ls > li:only-child::after {
-	content : ""
+	content : "."
 }
 
 /* Turn off generated content lists */
