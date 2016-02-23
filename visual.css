@@ -62,7 +62,7 @@ pre {
 address + p,
 adress + .serial-comma,
 p + address,
-p + p
+p + p,
 p + .serial-comma,
 .serial-comma + address,
 .serial-comma + p,
@@ -72,7 +72,8 @@ p + .serial-comma,
 
 address,
 p,
-figcaption {
+figcaption,
+.serial-comma {
 	margin-bottom : 0;
 	margin-top : 0
 }
