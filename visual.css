@@ -60,7 +60,7 @@ pre {
 }
 
 address + p,
-adress + .serial-comma,
+address + .serial-comma,
 p + address,
 p + p,
 p + .serial-comma,
@@ -71,12 +71,13 @@ p + .serial-comma,
 }
 
 address,
-p,
 figcaption,
+p,
 .serial-comma {
 	margin-bottom : 0;
 	margin-top : 0
 }
+
 blockquote,
 div,
 figure,
@@ -541,8 +542,8 @@ tr[hidden] {
 
 table {
 	border-collapse : collapse;
-	box-sizing : border-box;
 	border-spacing : 0;
+	box-sizing : border-box;
 	text-indent : initial
 }
 
