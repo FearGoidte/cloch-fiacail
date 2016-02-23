@@ -133,8 +133,8 @@ code {
 code,
 mark {
 	border-radius : .5em 2em .5em; /* Creates a slanted background to suggest a marker-pen has been dragged right to left across the text */
-	margin: 0 -.15em;/* Removes the horizontal space created by the following padding */
-	padding: 0 .15em;/* Creates horizontal space so that the background colour expands outwards from the text */
+	margin : 0 -.15em;/* Removes the horizontal space created by the following padding */
+	padding : 0 .15em;/* Creates horizontal space so that the background colour expands outwards from the text */
 	position : relative; /* Position needs to be something other than “static” for “z-index” settings to apply */
 	z-index : -1 /* Ensures that the padded background colour bleeds under rather than over other elements */
 }
@@ -457,15 +457,15 @@ ol > li > ol > li > ol > li> ol > li > ol > li::before {
 }
 
 .serial-comma > li::after {
-	content:", "
+	content : ", "
 }
 
 .serial-comma > li:nth-last-child(2)::after {
-	content:" and "
+	content : " and "
 }
 
 .serial-comma > li:nth-last-child(3) ~ li:nth-last-child(2)::after {
-	content:", and "
+	content : ", and "
 }
 
 .serial-comma > li:last-child::after,
