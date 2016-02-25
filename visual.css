@@ -127,7 +127,8 @@ strong strong {
 }
 
 code {
-	background-color : rgba(0, 0, 0, 0.04) /* Light grey */
+	background-color : rgba(0, 0, 0, 0.04); /* Light grey */
+	color : inherit
 }
 
 code,
@@ -165,6 +166,11 @@ sup {
 	color : #0000EE /* Blue */
 }
 
+:link,
+:visited {
+	background-color : inherit
+}
+
 :visited {
 	color : #551A8B /* Purple */
 }
@@ -185,7 +191,7 @@ abbr[title],
 
 mark {
 	background : yellow;
-	color : black
+	color : inherit
 } /* this color is just a suggestion and can be changed based on implementation feedback */
 
 abbr[title] {
@@ -200,6 +206,7 @@ del {
 	color : inherit;
 	-moz-text-decoration-color : red;
 	-webkit-text-decoration-color : red;
+	background-color : inherit;
 	text-decoration : line-through;
 	text-decoration-color : red
 }
@@ -604,8 +611,9 @@ input[type="submit"] {
 
 /* 10.3.12 The hr element */
 hr {
-	background : linear-gradient(to right, rgba(255, 255, 255, 0)/* White */, #ccc/* Medium grey */, rgba(255, 255, 255, 0)/* White */);
+	background : transparent linear-gradient(to right, rgba(255, 255, 255, 0)/* White */, #ccc/* Medium grey */, rgba(255, 255, 255, 0)/* White */);
 	border : none; /* Nullifies common user agent default */
+	color : inherit;
 	height : .052em;
 	position : relative;
 	text-align : center
@@ -613,6 +621,7 @@ hr {
 
 hr::before {
 	background-color : rgb(250, 250, 250); /* Same as html’s background colour */
+	color : inherit;
 	content : "⁂";
 	position : relative;
 	top : -.5em
