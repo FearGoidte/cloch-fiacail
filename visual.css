@@ -13,8 +13,8 @@ script,
 source,
 style,
 template,
-track,
 title,
+track,
 [hidden] {
 	display : none
 }
@@ -49,8 +49,8 @@ body {
 address,
 blockquote,
 div,
-figure,
 figcaption,
+figure,
 form,
 hr,
 legend,
@@ -485,8 +485,12 @@ ol > li > ol > li > ol > li> ol > li > ol > li::before {
 
 /* 10.3.9 Tables */
 table {
+	border-collapse : collapse;
+	border-spacing : 0;
+	box-sizing : border-box;
 	display : table;
-	margin : 1.4rem 0 1.4rem -.5rem /* Minus margin offsets the ‘td’ and ‘th’ margins */
+	margin : 1.4rem 0 1.4rem -.5rem; /* Minus margin offsets the ‘td’ and ‘th’ margins */
+	text-indent : initial
 }
 
 caption {
@@ -503,14 +507,16 @@ col[hidden] {
 	display : table-column
 }
 
-thead,
-thead[hidden] {
-	display : table-header-group
-}
-
 tbody,
 tbody[hidden] {
 	display : table-row-group
+}
+
+td,
+th,
+td[hidden],
+th[hidden] {
+	display : table-cell
 }
 
 tfoot,
@@ -518,15 +524,14 @@ tfoot[hidden] {
 	display : table-footer-group
 }
 
+thead,
+thead[hidden] {
+	display : table-header-group
+}
+
 tr,
 tr[hidden] {
 	display : table-row
-}
-td,
-th,
-td[hidden],
-th[hidden] {
-	display : table-cell
 }
 
 colgroup[hidden],
@@ -538,13 +543,6 @@ th[hidden],
 thead[hidden],
 tr[hidden] {
 	visibility : collapse
-}
-
-table {
-	border-collapse : collapse;
-	border-spacing : 0;
-	box-sizing : border-box;
-	text-indent : initial
 }
 
 td,
