@@ -142,6 +142,15 @@ mark {
 
 code,
 kbd,
+mark,
+samp,
+sub,
+sup {
+	line-height : 0 /* Elements that have a ‘vertical-align’ other than baseline or a position value will expand their parent element’s line-height unless their own line-height is set to ‘0’ */
+}
+
+code,
+kbd,
 samp {
 	font-family : monospace;
 	white-space : pre-line; /* Preserve whitespace whilst preventing element from stretching width of parent element */
@@ -158,8 +167,7 @@ sup {
 
 sub,
 sup {
-	font-size : smaller;
-	line-height : 0 /* Elements that have a ‘vertical-align’ other than baseline or a position value will expand their parent element’s line-height unless their own line-height is set to ‘0’ */
+	font-size : smaller
 }
 
 :link {
@@ -190,9 +198,9 @@ abbr[title],
 }
 
 mark {
-	background : yellow;
+	background : rgb(255, 248, 220); /*Cornsilk */
 	color : inherit
-} /* this color is just a suggestion and can be changed based on implementation feedback */
+}
 
 abbr[title] {
 	text-decoration : inherit /* Nullify common user-agent dotted underline default */
