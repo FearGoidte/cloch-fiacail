@@ -74,6 +74,7 @@ address,
 figcaption,
 p,
 blockquote > footer,
+header > *, /* Remove margins for elements within headers */
 .serial-comma {
 	margin-bottom : 0;
 	margin-top : 0
@@ -343,14 +344,16 @@ h4,
 h5,
 h6,
 header,
-th {
+th,
+[role=banner] {
 	font-family : sans-serif;
 	font-weight : inherit
 }
 
 h1,
 h2,
-h3 {
+h3,
+header {/* Header selector assumes that only h1–h3 appear in header elements */
 	line-height : 2.8rem;
 	margin : 2.8rem 0 1.4rem 0
 }
