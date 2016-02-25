@@ -6,268 +6,287 @@
 		<meta name="viewport" content="initial-scale=1" />
 		<title>Sampler</title>
 		<style media="screen" type="text/css">
-		<![CDATA[
-			html {
-				background : rgb(250, 250, 250) linear-gradient(rgb(217, 234, 243),rgb(250, 250, 250) 8%);/* Light blue to off-white */
-				background-size : 100% 1.4em
-			}
-		]]>
+			<![CDATA[
+				html {
+					background : rgb(250, 250, 250) linear-gradient(rgb(217, 234, 243),rgb(250, 250, 250) 8%);/* Light blue to off-white */
+					background-size : 100% 1.4em
+				}
+			]]>
 		</style>
 	</head>
 	<body>
-		<h1>Sampler</h1>
-		<nav>
-			<h2>Table of contents</h2>
-			<ol>
-				<li><a href="#nav_horizontal_rule">Horizontal rule</a></li>
-				<li><a href="#nav_lists">Lists</a></li>
-				<li><a href="#nav_tables">Tables</a></li>
-				<li><a href="#nav_phrasing_content">Phrasing content</a></li>
-			</ol>
-		</nav>
-		<h2 id="nav_horizontal_rule">Horizontal rule</h2>
-		<p>Two paragraphs separated by a horizontal rule.</p>
-		<p>Proin quis felis est. Duis porta velit id mauris pulvinar non rhoncus dolor dapibus. Aliquam ut nulla et dui luctus tincidunt eget in sapien.</p>
-		<hr />
-		<p>In elementum sem felis, et sollicitudin mauris. Phasellus laoreet mauris sed libero tempus in porttitor metus fringilla. Praesent id odio orci, ut laoreet massa. Pellentesque a tellus vitae massa venenatis auctor et pretium erat. Praesent tristique adipiscing elit nec molestie. In tincidunt cursus porttitor. Pellentesque dapibus augue vitae massa ullamcorper dignissim. Vestibulum ante ipsum primis in faucibus orci luctus.</p>
-		<h2 id="nav_lists">Lists</h2>
-		<h3>Ordered list</h3>
-		<h4>A simple ordered list</h4>
-		<ol reversed="reversed">
-			<li>Et ille ridens: Video, inquit, quid agas;</li>
-			<li>Nec tamen ille erat sapiens quis enim hoc aut quando aut ubi aut unde?</li>
-			<li>Hoc loco tenere se Triarius non potuit.</li>
-			<li>Manebit ergo amicitia tam diu, quam diu sequetur utilitas, et, si utilitas amicitiam constituet, tollet eadem.</li>
-			<li>Restinguet citius, si ardentem acceperit.</li>
-			<li>Qui enim existimabit posse se miserum esse beatus non erit.</li>
-			<li>Quis Aristidem non mortuum diligit?</li>
-		</ol>
-		<h4>Ordered lists, nest five deep</h4>
-			<ol>
-				<li>Est autem officium, quod ita factum est, ut eius facti probabilis ratio reddi possit.</li>
-				<li>Hoc loco tenere se Triarius non potuit:
-						<ol>
-							<li>Est autem officium, quod ita factum est, ut eius facti probabilis ratio reddi possit.</li>
-							<li>Serpere anguiculos, nare anaticulas, evolare merulas, cornibus uti videmus boves, nepas aculeis.</li>
-							<li>Hoc loco tenere se Triarius non potuit:
-								<ol>
-									<li>Est autem officium, quod ita factum est, ut eius facti probabilis ratio reddi possit.</li>
-									<li>Serpere anguiculos, nare anaticulas, evolare merulas, cornibus uti videmus boves, nepas aculeis.</li>
-									<li>Hoc loco tenere se Triarius non potuit:
-										<ol>
-											<li>Est autem officium, quod ita factum est, ut eius facti probabilis ratio reddi possit.</li>
-											<li>Serpere anguiculos, nare anaticulas, evolare merulas, cornibus uti videmus boves, nepas aculeis.</li>
-											<li>Nam si amitti vita beata potest, beata esse non potest.</li>
-											<li>Hoc loco tenere se Triarius non potuit:
-												<ol>
-													<li>Est autem officium, quod ita factum est, ut eius facti probabilis ratio reddi possit.</li>
-													<li>Serpere anguiculos, nare anaticulas, evolare merulas, cornibus uti videmus boves, nepas aculeis.</li>
-													<li>Nam si amitti vita beata potest, beata esse non potest.</li>
-													<li>Atqui eorum nihil est eius generis, ut sit in fine atque extrerno bonorum.</li>
-													<li>Quid sequatur, quid repugnet, vident.</li>
-													<li>Miserum hominem! Si dolor summum malum est, dici aliter non potest.</li>
-												</ol>
-											</li>
-											<li>Quid sequatur, quid repugnet, vident.</li>
-											<li>Miserum hominem! Si dolor summum malum est, dici aliter non potest.</li>
-										</ol>
-									</li>
-									<li>Atqui eorum nihil est eius generis, ut sit in fine atque extrerno bonorum.</li>
-									<li>Quid sequatur, quid repugnet, vident.</li>
-									<li>Miserum hominem! Si dolor summum malum est, dici aliter non potest.</li>
-								</ol>
-							</li>
-							<li>Atqui eorum nihil est eius generis, ut sit in fine atque extrerno bonorum.</li>
-							<li>Quid sequatur, quid repugnet, vident.</li>
-							<li>Miserum hominem! Si dolor summum malum est, dici aliter non potest.</li>
-						</ol>
-				</li>
-				<li>Nam si amitti vita beata potest, beata esse non potest.</li>
-				<li>Atqui eorum nihil est eius generis, ut sit in fine atque extrerno bonorum.</li>
-				<li>Quid sequatur, quid repugnet, vident.</li>
-				<li>Miserum hominem! Si dolor summum malum est, dici aliter non potest.</li>
-			</ol>
-		<h4>Ordered list within an unordered list</h4>
-		<ul>
-			<li>Audeo dicere, inquit.</li>
-			<li>Nobis Heracleotes ille Dionysius flagitiose descivisse videtur a Stoicis propter oculorum dolorem.
+	  	<a href="#nav_main">Skip to main content</a>
+		<main id="nav_main">
+			<h1>Sampler</h1>
+			<nav>
+				<h2>Table of contents</h2>
 				<ol>
-					<li>Audeo dicere, inquit.</li>
-					<li>Nobis Heracleotes ille Dionysius flagitiose descivisse videtur a Stoicis propter oculorum dolorem.</li>
-					<li>An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit?</li>
-					<li>Primum divisit ineleganter;</li>
+					<li><a href="#nav_horizontal_rule">Horizontal rule</a></li>
+					<li><a href="#nav_lists">Lists</a></li>
+					<li><a href="#nav_tables">Tables</a></li>
+					<li><a href="#nav_phrasing_content">Phrasing content</a></li>
 				</ol>
-			</li>
-			<li>An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit?</li>
-			<li>Primum divisit ineleganter;</li>
-		</ul>
-		<h4>A simple un-ordered list</h4>
-		<ul>
-			<li>Audeo dicere, inquit.</li>
-			<li>Nobis Heracleotes ille Dionysius flagitiose descivisse videtur a Stoicis propter oculorum dolorem.</li>
-			<li>An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit?</li>
-			<li>Primum divisit ineleganter;</li>
-		</ul>
-		<h4>Un-ordered lists, nest five deep</h4>
-		<ul>
-			<li>Cur igitur, inquam, res tam dissimiles eodem nomine appellas?</li>
-			<li>Hoc loco tenere se Triarius non potuit:
-				<ul>
-					<li>Cur igitur, inquam, res tam dissimiles eodem nomine appellas?</li>
-					<li>Vide ne ista sint Manliana vestra aut maiora etiam, si imperes quod facere non possim.</li>
-					<li>Non igitur de improbo, sed de callido improbo quaerimus, qualis Q.</li>
-					<li>Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae.</li>
+			</nav>
+			<h2 id="nav_horizontal_rule">Horizontal rule</h2>
+			<p>Two paragraphs separated by a horizontal rule.</p>
+			<p>Proin quis felis est. Duis porta velit id mauris pulvinar non rhoncus dolor dapibus. Aliquam ut nulla et dui luctus tincidunt eget in sapien.</p>
+			<hr />
+			<p>In elementum sem felis, et sollicitudin mauris. Phasellus laoreet mauris sed libero tempus in porttitor metus fringilla. Praesent id odio orci, ut laoreet massa. Pellentesque a tellus vitae massa venenatis auctor et pretium erat. Praesent tristique adipiscing elit nec molestie. In tincidunt cursus porttitor. Pellentesque dapibus augue vitae massa ullamcorper dignissim. Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+			<h2 id="nav_lists">Lists</h2>
+			<h3>Ordered list</h3>
+			<h4>A simple ordered list</h4>
+			<ol reversed="reversed">
+				<li>Et ille ridens: Video, inquit, quid agas;</li>
+				<li>Nec tamen ille erat sapiens quis enim hoc aut quando aut ubi aut unde?</li>
+				<li>Hoc loco tenere se Triarius non potuit.</li>
+				<li>Manebit ergo amicitia tam diu, quam diu sequetur utilitas, et, si utilitas amicitiam constituet, tollet eadem.</li>
+				<li>Restinguet citius, si ardentem acceperit.</li>
+				<li>Qui enim existimabit posse se miserum esse beatus non erit.</li>
+				<li>Quis Aristidem non mortuum diligit?</li>
+			</ol>
+			<h4>Ordered lists, nest five deep</h4>
+				<ol>
+					<li>Est autem officium, quod ita factum est, ut eius facti probabilis ratio reddi possit.</li>
 					<li>Hoc loco tenere se Triarius non potuit:
-						<ul>
-							<li>Cur igitur, inquam, res tam dissimiles eodem nomine appellas?</li>
-							<li>Vide ne ista sint Manliana vestra aut maiora etiam, si imperes quod facere non possim.</li>
-							<li>Non igitur de improbo, sed de callido improbo quaerimus, qualis Q.</li>
-							<li>Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae.</li>
-							<li>Hoc loco tenere se Triarius non potuit:
-								<ul>
-									<li>Cur igitur, inquam, res tam dissimiles eodem nomine appellas?</li>
-									<li>Vide ne ista sint Manliana vestra aut maiora etiam, si imperes quod facere non possim.</li>
-									<li>Hoc loco tenere se Triarius non potuit:
-										<ul>
-											<li>Cur igitur, inquam, res tam dissimiles eodem nomine appellas?</li>
-											<li>Vide ne ista sint Manliana vestra aut maiora etiam, si imperes quod facere non possim.</li>
-											<li>Non igitur de improbo, sed de callido improbo quaerimus, qualis Q.</li>
-											<li>Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae.</li>
-											<li>Negat esse eam, inquit, propter se expetendam.</li>
-											<li>Quamquam te quidem video minime esse deterritum.</li>
-										</ul>
-									</li>
-									<li>Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae.</li>
-									<li>Negat esse eam, inquit, propter se expetendam.</li>
-									<li>Quamquam te quidem video minime esse deterritum.</li>
-								</ul>
-							</li>
-							<li>Quamquam te quidem video minime esse deterritum.</li>
-						</ul>
+							<ol>
+								<li>Est autem officium, quod ita factum est, ut eius facti probabilis ratio reddi possit.</li>
+								<li>Serpere anguiculos, nare anaticulas, evolare merulas, cornibus uti videmus boves, nepas aculeis.</li>
+								<li>Hoc loco tenere se Triarius non potuit:
+									<ol>
+										<li>Est autem officium, quod ita factum est, ut eius facti probabilis ratio reddi possit.</li>
+										<li>Serpere anguiculos, nare anaticulas, evolare merulas, cornibus uti videmus boves, nepas aculeis.</li>
+										<li>Hoc loco tenere se Triarius non potuit:
+											<ol>
+												<li>Est autem officium, quod ita factum est, ut eius facti probabilis ratio reddi possit.</li>
+												<li>Serpere anguiculos, nare anaticulas, evolare merulas, cornibus uti videmus boves, nepas aculeis.</li>
+												<li>Nam si amitti vita beata potest, beata esse non potest.</li>
+												<li>Hoc loco tenere se Triarius non potuit:
+													<ol>
+														<li>Est autem officium, quod ita factum est, ut eius facti probabilis ratio reddi possit.</li>
+														<li>Serpere anguiculos, nare anaticulas, evolare merulas, cornibus uti videmus boves, nepas aculeis.</li>
+														<li>Nam si amitti vita beata potest, beata esse non potest.</li>
+														<li>Atqui eorum nihil est eius generis, ut sit in fine atque extrerno bonorum.</li>
+														<li>Quid sequatur, quid repugnet, vident.</li>
+														<li>Miserum hominem! Si dolor summum malum est, dici aliter non potest.</li>
+													</ol>
+												</li>
+												<li>Quid sequatur, quid repugnet, vident.</li>
+												<li>Miserum hominem! Si dolor summum malum est, dici aliter non potest.</li>
+											</ol>
+										</li>
+										<li>Atqui eorum nihil est eius generis, ut sit in fine atque extrerno bonorum.</li>
+										<li>Quid sequatur, quid repugnet, vident.</li>
+										<li>Miserum hominem! Si dolor summum malum est, dici aliter non potest.</li>
+									</ol>
+								</li>
+								<li>Atqui eorum nihil est eius generis, ut sit in fine atque extrerno bonorum.</li>
+								<li>Quid sequatur, quid repugnet, vident.</li>
+								<li>Miserum hominem! Si dolor summum malum est, dici aliter non potest.</li>
+							</ol>
 					</li>
-					<li>Quamquam te quidem video minime esse deterritum.</li>
-				</ul>
-			</li>
-			<li>Non igitur de improbo, sed de callido improbo quaerimus, qualis Q.</li>
-			<li>Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae.</li>
-			<li>Negat esse eam, inquit, propter se expetendam.</li>
-			<li>Quamquam te quidem video minime esse deterritum.</li>
-		</ul>
-		<h4>Unordered list within an ordered list</h4>
-		<ol>
-			<li>Audeo dicere, inquit.</li>
-			<li>Nobis Heracleotes ille Dionysius flagitiose descivisse videtur a Stoicis propter oculorum dolorem.
-				<ul>
-					<li>Audeo dicere, inquit.</li>
-					<li>Nobis Heracleotes ille Dionysius flagitiose descivisse videtur a Stoicis propter oculorum dolorem.</li>
-					<li>An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit?</li>
-					<li>Primum divisit ineleganter;</li>
-				</ul>
-			</li>
-			<li>An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit?</li>
-			<li>Primum divisit ineleganter;</li>
-		</ol>
-		<h3>A definition list</h3>
-		<dl>
-			<dt>First term</dt>
-			<dd>First term’s definition.</dd>
-			<dt><dfn>Second term, wrapped in a <code>dfn</code> element</dfn></dt>
-			<dd>Second term’s definition plus some extra text. Est enim tanti philosophi tamque nobilis audacter sua decreta defendere.</dd>
-			<dt>Third definition gets two terms.</dt>
-			<dt><dfn>Quid enim?</dfn></dt>
-			<dd>Putabam equidem satis, inquit, me dixisse.</dd>
-			<dt><dfn>Fifth term gets two definitions</dfn></dt>
-			<dd>Primum divisit ineleganter;</dd>
-			<dd>Ita similis erit ei finis boni, atque antea fuerat, neque idem tamen;</dd>
-			<dt><dfn>Haec dicuntur inconstantissime.</dfn></dt>
-			<dd>Nam si amitti vita beata potest, beata esse non potest.</dd>
-		</dl>
-		<h3>Serial comma</h3>
-		<h4>Single item unordered list</h4>
-		<ul class="serial-comma">
-			<li>First item</li>
-		</ul>
-		<h4>Two item unordered list</h4>
-		<ul class="serial-comma">
-			<li>First item</li>
-			<li>Second item</li>
-		</ul>
-		<h4>Three item unordered list</h4>
-		<ul class="serial-comma">
-			<li>First item</li>
-			<li>Second item</li>
-			<li>Third item</li>
-		</ul>
-		<h4>Three item unordered list preceded and antecedent by paragraphs</h4>
-		<p>Proin quis felis est. Duis porta velit id mauris pulvinar non rhoncus dolor dapibus. Aliquam ut nulla et dui luctus tincidunt eget in sapien.</p>
-		<ul class="serial-comma">
-			<li>First item</li>
-			<li>Second item</li>
-			<li>Third item</li>
-		</ul>
-		<p>Proin quis felis est. Duis porta velit id mauris pulvinar non rhoncus dolor dapibus. Aliquam ut nulla et dui luctus tincidunt eget in sapien.</p>
-		<h2 id="nav_tables">Tables</h2>
-		<p>Example taken from <cite><a href="http://accessibility.psu.edu/tablecomplexhtml">Tables for Data in <abbr title="Hypertext Mark-up Language" class="initialism">H.T.M.L.</abbr></a></cite></p>
-		<table>
-  			<caption>Colour names for black, white, red, blue, green, yellow in multiple languages, grouped by language family</caption>
- 			<thead>
-				<tr>
-					<th id="fam">Family</th>
-				  	<th id="rmc" colspan="2">Romance</th>
-				  	<th id="cel" colspan="2">Celtic</th>
-				</tr>
-				<tr>
-					<th id="hue">Colour</th>
-					<th headers="rmc" id="es">Spanish</th>
-					<th headers="rmc" id="fr">French</th>
-					<th headers="cel" id="ga">Irish</th>
-					<th headers="cel" id="cy">Welsh</th>
-				</tr>
-  			</thead>
-  			<tbody>
-				<tr>
-					<th headers="hue" id="G">Green</th>
-					<td xml:lang="es" headers="rmc es G">verde</td>
-					<td xml:lang="fr" headers="rmc fr G">vert</td>
-					<td xml:lang="ga" headers="cel ga G">glas</td>
-					<td xml:lang="cy" headers="cel cy G">gwyrdd</td>
-				</tr>
-				<tr>
-					<th headers="hue" id="B">Blue</th>
-					<td xml:lang="es" headers="rmc es B">azul</td>
-					<td xml:lang="fr" headers="rmc fr B">bleu</td>
-					<td xml:lang="ga" headers="cel ga B">gorm</td>
-					<td xml:lang="cy" headers="cel cy B">glas</td>
-				</tr>
-				<tr>
-					<th headers="hue" id="K">Black</th>
-					<td xml:lang="es" headers="rmc es K">negro</td>
-					<td xml:lang="fr" headers="rmc fr K">noir</td>
-					<td xml:lang="ga" headers="cel ga K">dubh</td>
-					<td xml:lang="cy" headers="cel cy K">du</td>
-				</tr>
-			</tbody>
-		</table>
-		<h2>Phrase elements</h2>
-		<p>This is a paragraph contain the abbreviation for <abbr title="Hypertext Mark-up Language" class="initialism">H.T.M.L.</abbr> and not much else.</p>
-		<h2 id="nav_phrasing_content">Phrasing content</h2>
-		<p>Phrasing styles should stack nicely since many of them will stack regardless.</p>
-		<h3>Anchors away—links</h3>
-		<p>This paragraph contains first <a href="#edits">a link</a> to another part of this document, then a spoof link to <a href="bob.xhtml">another document</a> local to this one, then a link to <a href="bob.xhtml#edits">another part of a spoof document</a> local to this one, and finally a link to a document on another server on <span xml:lang="ang">Þe eald</span> <a href="http://www.w3c.org">world wide web</a>.</p>
-		<h3>Giving weight—<code>cite</code>, <code>em</code>, <code>mark</code>, and <code>strong</code></h3>
-		<p>This sentence contains <em>an emphasized phrase</em>. This sentence contains <strong>a strongly emphasized</strong> phrase. This sentence contains <em>a strongly emphasized bit <strong>within</strong> an emphasized phrase</em>. This sentence contains <strong>an emphasized bit <em>within</em> a strongly phrase</strong>.</p>
-		<p>This sentence <strong>contains some <strong>strong text</strong> within</strong> some other strong text.</p>
-		<p>This sentence <em>contains some <em>emphasised text</em> within</em> some other emphasised text.</p>
-		<p><cite>Citations</cite> are often styled the same as emphasized phrases so <em>this emphasized phrase contains a <cite>citation</cite> to see if we can still notice it.</em></p>
-		<p>Some of the text in this <mark>paragraph is marked</mark>, can you spot which.</p>
-		<h4>A longer run of marked text</h4>
-		<p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus <mark>elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra</mark> quis, feugiat a, tellus.</p>
-		<h3>In brief—abbreviations</h3>
-		<p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, <abbr title="Blow It Out Your Input Output Port" class="initialism">B.I.O.Y.I.O.P.</abbr> viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p>
-		<h3><q>Time is never time at all</q></h3>
-		<p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, <time>2014</time> viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p>
-		<h3><samp>I’m sorry, Dave. &#8203;I’m afraid I can’t do that</samp>—code</h3>
-		<p>The following paragraph contains code:</p>
-		<p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, <code>viverra quis, feugiat</code> a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p>
+					<li>Nam si amitti vita beata potest, beata esse non potest.</li>
+					<li>Atqui eorum nihil est eius generis, ut sit in fine atque extrerno bonorum.</li>
+					<li>Quid sequatur, quid repugnet, vident.</li>
+					<li>Miserum hominem! Si dolor summum malum est, dici aliter non potest.</li>
+				</ol>
+			<h4>Ordered list within an unordered list</h4>
+			<ul>
+				<li>Audeo dicere, inquit.</li>
+				<li>Nobis Heracleotes ille Dionysius flagitiose descivisse videtur a Stoicis propter oculorum dolorem.
+					<ol>
+						<li>Audeo dicere, inquit.</li>
+						<li>Nobis Heracleotes ille Dionysius flagitiose descivisse videtur a Stoicis propter oculorum dolorem.</li>
+						<li>An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit?</li>
+						<li>Primum divisit ineleganter;</li>
+					</ol>
+				</li>
+				<li>An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit?</li>
+				<li>Primum divisit ineleganter;</li>
+			</ul>
+			<h4>A simple un-ordered list</h4>
+			<ul>
+				<li>Audeo dicere, inquit.</li>
+				<li>Nobis Heracleotes ille Dionysius flagitiose descivisse videtur a Stoicis propter oculorum dolorem.</li>
+				<li>An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit?</li>
+				<li>Primum divisit ineleganter;</li>
+			</ul>
+			<h4>Un-ordered lists, nest five deep</h4>
+			<ul>
+				<li>Cur igitur, inquam, res tam dissimiles eodem nomine appellas?</li>
+				<li>Hoc loco tenere se Triarius non potuit:
+					<ul>
+						<li>Cur igitur, inquam, res tam dissimiles eodem nomine appellas?</li>
+						<li>Vide ne ista sint Manliana vestra aut maiora etiam, si imperes quod facere non possim.</li>
+						<li>Non igitur de improbo, sed de callido improbo quaerimus, qualis Q.</li>
+						<li>Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae.</li>
+						<li>Hoc loco tenere se Triarius non potuit:
+							<ul>
+								<li>Cur igitur, inquam, res tam dissimiles eodem nomine appellas?</li>
+								<li>Vide ne ista sint Manliana vestra aut maiora etiam, si imperes quod facere non possim.</li>
+								<li>Non igitur de improbo, sed de callido improbo quaerimus, qualis Q.</li>
+								<li>Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae.</li>
+								<li>Hoc loco tenere se Triarius non potuit:
+									<ul>
+										<li>Cur igitur, inquam, res tam dissimiles eodem nomine appellas?</li>
+										<li>Vide ne ista sint Manliana vestra aut maiora etiam, si imperes quod facere non possim.</li>
+										<li>Hoc loco tenere se Triarius non potuit:
+											<ul>
+												<li>Cur igitur, inquam, res tam dissimiles eodem nomine appellas?</li>
+												<li>Vide ne ista sint Manliana vestra aut maiora etiam, si imperes quod facere non possim.</li>
+												<li>Non igitur de improbo, sed de callido improbo quaerimus, qualis Q.</li>
+												<li>Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae.</li>
+												<li>Negat esse eam, inquit, propter se expetendam.</li>
+												<li>Quamquam te quidem video minime esse deterritum.</li>
+											</ul>
+										</li>
+										<li>Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae.</li>
+										<li>Negat esse eam, inquit, propter se expetendam.</li>
+										<li>Quamquam te quidem video minime esse deterritum.</li>
+									</ul>
+								</li>
+								<li>Quamquam te quidem video minime esse deterritum.</li>
+							</ul>
+						</li>
+						<li>Quamquam te quidem video minime esse deterritum.</li>
+					</ul>
+				</li>
+				<li>Non igitur de improbo, sed de callido improbo quaerimus, qualis Q.</li>
+				<li>Tollitur beneficium, tollitur gratia, quae sunt vincla concordiae.</li>
+				<li>Negat esse eam, inquit, propter se expetendam.</li>
+				<li>Quamquam te quidem video minime esse deterritum.</li>
+			</ul>
+			<h4>Unordered list within an ordered list</h4>
+			<ol>
+				<li>Audeo dicere, inquit.</li>
+				<li>Nobis Heracleotes ille Dionysius flagitiose descivisse videtur a Stoicis propter oculorum dolorem.
+					<ul>
+						<li>Audeo dicere, inquit.</li>
+						<li>Nobis Heracleotes ille Dionysius flagitiose descivisse videtur a Stoicis propter oculorum dolorem.</li>
+						<li>An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit?</li>
+						<li>Primum divisit ineleganter;</li>
+					</ul>
+				</li>
+				<li>An dolor longissimus quisque miserrimus, voluptatem non optabiliorem diuturnitas facit?</li>
+				<li>Primum divisit ineleganter;</li>
+			</ol>
+			<h3>A definition list</h3>
+			<dl>
+				<dt>First term</dt>
+				<dd>First term’s definition.</dd>
+				<dt><dfn>Second term, wrapped in a <code>dfn</code> element</dfn></dt>
+				<dd>Second term’s definition plus some extra text. Est enim tanti philosophi tamque nobilis audacter sua decreta defendere.</dd>
+				<dt>Third definition gets two terms.</dt>
+				<dt><dfn>Quid enim?</dfn></dt>
+				<dd>Putabam equidem satis, inquit, me dixisse.</dd>
+				<dt><dfn>Fifth term gets two definitions</dfn></dt>
+				<dd>Primum divisit ineleganter;</dd>
+				<dd>Ita similis erit ei finis boni, atque antea fuerat, neque idem tamen;</dd>
+				<dt><dfn>Haec dicuntur inconstantissime.</dfn></dt>
+				<dd>Nam si amitti vita beata potest, beata esse non potest.</dd>
+			</dl>
+			<h3>Serial comma</h3>
+			<h4>Single item unordered list</h4>
+			<ul class="serial-comma">
+				<li>First item</li>
+			</ul>
+			<h4>Two item unordered list</h4>
+			<ul class="serial-comma">
+				<li>First item</li>
+				<li>Second item</li>
+			</ul>
+			<h4>Three item unordered list</h4>
+			<ul class="serial-comma">
+				<li>First item</li>
+				<li>Second item</li>
+				<li>Third item</li>
+			</ul>
+			<h4>Three item unordered list preceded and antecedent by paragraphs</h4>
+			<p>Proin quis felis est. Duis porta velit id mauris pulvinar non rhoncus dolor dapibus. Aliquam ut nulla et dui luctus tincidunt eget in sapien.</p>
+			<ul class="serial-comma">
+				<li>First item</li>
+				<li>Second item</li>
+				<li>Third item</li>
+			</ul>
+			<p>Proin quis felis est. Duis porta velit id mauris pulvinar non rhoncus dolor dapibus. Aliquam ut nulla et dui luctus tincidunt eget in sapien.</p>
+			<h2 id="nav_tables">Tables</h2>
+			<p>Example taken from <cite><a href="http://accessibility.psu.edu/tablecomplexhtml">Tables for Data in <abbr title="Hypertext Mark-up Language" class="initialism">H.T.M.L.</abbr></a></cite></p>
+			<table>
+				<caption>Colour names for black, white, red, blue, green, yellow in multiple languages, grouped by language family</caption>
+				<thead>
+					<tr>
+						<th id="fam">Family</th>
+						<th id="rmc" colspan="2">Romance</th>
+						<th id="cel" colspan="2">Celtic</th>
+					</tr>
+					<tr>
+						<th id="hue">Colour</th>
+						<th headers="rmc" id="es">Spanish</th>
+						<th headers="rmc" id="fr">French</th>
+						<th headers="cel" id="ga">Irish</th>
+						<th headers="cel" id="cy">Welsh</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th headers="hue" id="G">Green</th>
+						<td xml:lang="es" headers="rmc es G">verde</td>
+						<td xml:lang="fr" headers="rmc fr G">vert</td>
+						<td xml:lang="ga" headers="cel ga G">glas</td>
+						<td xml:lang="cy" headers="cel cy G">gwyrdd</td>
+					</tr>
+					<tr>
+						<th headers="hue" id="B">Blue</th>
+						<td xml:lang="es" headers="rmc es B">azul</td>
+						<td xml:lang="fr" headers="rmc fr B">bleu</td>
+						<td xml:lang="ga" headers="cel ga B">gorm</td>
+						<td xml:lang="cy" headers="cel cy B">glas</td>
+					</tr>
+					<tr>
+						<th headers="hue" id="K">Black</th>
+						<td xml:lang="es" headers="rmc es K">negro</td>
+						<td xml:lang="fr" headers="rmc fr K">noir</td>
+						<td xml:lang="ga" headers="cel ga K">dubh</td>
+						<td xml:lang="cy" headers="cel cy K">du</td>
+					</tr>
+				</tbody>
+			</table>
+			<h2>Phrase elements</h2>
+			<dl>
+				<dt>Archer</dt>
+				<dd>Goddammit, how are we not doing ‘phrasing’‽</dd>
+			</dl>
+			<p>This is a paragraph contain the abbreviation for <abbr title="Hypertext Mark-up Language" class="initialism">H.T.M.L.</abbr> and not much else.</p>
+			<h2 id="nav_phrasing_content">Phrasing content</h2>
+			<p>Phrasing styles should stack nicely since many of them will stack regardless.</p>
+			<h3>Anchors away—links</h3>
+			<p>This paragraph contains first <a href="#edits">a link</a> to another part of this document, then a spoof link to <a href="bob.xhtml">another document</a> local to this one, then a link to <a href="bob.xhtml#edits">another part of a spoof document</a> local to this one, and finally a link to a document on another server on <span xml:lang="ang">Þe eald</span> <a href="http://www.w3c.org">world wide web</a>.</p>
+			<h3>Giving weight—<code>cite</code>, <code>em</code>, <code>mark</code>, and <code>strong</code></h3>
+			<p>This sentence contains <em>an emphasized phrase</em>. This sentence contains <strong>a strongly emphasized</strong> phrase. This sentence contains <em>a strongly emphasized bit <strong>within</strong> an emphasized phrase</em>. This sentence contains <strong>an emphasized bit <em>within</em> a strongly phrase</strong>.</p>
+			<p>This sentence <strong>contains some <strong>strong text</strong> within</strong> some other strong text.</p>
+			<p>This sentence <em>contains some <em>emphasised text</em> within</em> some other emphasised text.</p>
+			<p><cite>Citations</cite> are often styled the same as emphasized phrases so <em>this emphasized phrase contains a <cite>citation</cite> to see if we can still notice it.</em></p>
+			<p>Some of the text in this <mark>paragraph is marked</mark>, can you spot which.</p>
+			<h4>A longer run of marked text</h4>
+			<p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus <mark>elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra</mark> quis, feugiat a, tellus.</p>
+			<h3>In brief—abbreviations</h3>
+			<p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, <abbr title="Blow It Out Your Input Output Port" class="initialism">B.I.O.Y.I.O.P.</abbr> viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p>
+			<h3><q>Time is never time at all</q></h3>
+			<p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, <time>2014</time> viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p>
+			<h3><samp>I’m sorry, Dave. &#8203;I’m afraid I can’t do that</samp>—code</h3>
+			<p>The following paragraph contains code:</p>
+			<p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, <code>viverra quis, feugiat</code> a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p>
+			<h2>‘Blog’ mark-up patterns</h2>
+			<footer xmlns="http://www.w3.org/1999/xhtml">
+				<dl>
+					<dt>Tagged with</dt>
+						<dd><a href="/tags/blogging/" rel="tag">blogging</a></dd>
+						<dd><a href="/tags/eruby/" rel="tag">eRuby</a></dd>
+						<dd><a href="/tags/middleman/" rel="tag">Middleman</a></dd>
+						<dd><a href="/tags/rel/" rel="tag">rel</a></dd>
+						<dd><a href="/tags/xhtml/" rel="tag"><abbr title="eXtensible Hypertext Mark-up Language" class="initialism">X.H.T.M.L.</abbr></a></dd>
+						<dd><a href="/tags/yaml/" rel="tag"><abbr title="YAML Ain’t Markup Language">YAML</abbr></a></dd>
+				</dl>
+			</footer>
+		</main>
 	</body>
 </html>
