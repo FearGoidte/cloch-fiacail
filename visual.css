@@ -117,9 +117,14 @@ var {
 
 strong,
 em em {
-	font-size : .9em;
 	font-weight : inherit; /* Nullify common user-agent bold default */
 	text-transform : uppercase
+}
+
+strong,
+em em,
+.initialism {
+	font-size : .9em
 }
 
 strong strong {
@@ -183,8 +188,6 @@ h2 samp {
 	letter-spacing : inherit; /* Prevent tightened text from cascading */
 	word-spacing : inherit /* Prevent tightened text from cascading */
 }
-
-
 
 sub {
 	vertical-align : sub
