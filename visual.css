@@ -115,6 +115,16 @@ var {
 	font-style : italic
 }
 
+em cite::after,
+em dfn::after {
+	content : "’"
+}
+
+em cite::before,
+em dfn::before {
+	content : "‘"
+}
+
 strong,
 em em {
 	font-weight : inherit; /* Nullify common user-agent bold default */
