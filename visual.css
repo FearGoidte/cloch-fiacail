@@ -73,6 +73,7 @@ p + .serial-comma,
 address,
 figcaption,
 p,
+blockquote > footer,
 .serial-comma {
 	margin-bottom : 0;
 	margin-top : 0
@@ -244,6 +245,7 @@ mark {
 	color : inherit
 }
 
+abbr,
 abbr[title] {
 	text-decoration : inherit /* Nullify common user-agent dotted underline default */
 }
