@@ -48,16 +48,18 @@ body {
 
 /* 10.3.3 Flow content */
 address,
-blockquote,
 div,
-figcaption,
-figure,
 form,
 hr,
 legend,
 p,
 pre {
 	display : block
+}
+
+address {
+	font-family : inherit; /* Nullify common user-agent monospace default */
+	font-style : inherit /* Nullify common user-agent italic default */
 }
 
 address + p,
@@ -92,15 +94,33 @@ pre {
 	margin-top : 1.4rem
 }
 
-blockquote,
-figure {
+blockquote {
 	margin-left : 1.4rem;
 	margin-right : 1.4rem
 }
 
-address {
-	font-family : inherit; /* Nullify common user-agent monospace default */
-	font-style : inherit /* Nullify common user-agent italic default */
+figure {
+	margin-left : 0;
+	margin-right : 0
+}
+
+figure > img,
+figure > object {
+	display : block
+}
+blockquote,
+figure {
+	display : table
+}
+
+figcaption,
+blockquote > footer {
+	caption-side : bottom;
+	display : table-caption
+}
+
+figcaption {
+	display:none
 }
 
 pre {
