@@ -563,14 +563,14 @@ tr {
 	vertical-align : inherit
 }
 
-table,
-td,
-th {
+table {
 	border-color : gray
 }
 
 tbody,
+td,
 tfoot,
+th,
 thead,
 tr {
 	border-color : inherit
