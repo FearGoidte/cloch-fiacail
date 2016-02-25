@@ -157,6 +157,35 @@ samp {
 	word-break : normal /* Preserve whitespace whilst preventing element from stretching width of parent element */
 }
 
+code,
+h1,
+h2,
+kbd,
+samp {
+	letter-spacing : -.05rem; /* Tighten large headings and fixed-width text */
+	word-spacing : -.05rem /* Tighten large headings and fixed-width text */
+}
+code code,
+code kbd,
+code samp,
+kbd code,
+kbd kbd,
+kbd samp,
+samp code,
+samp kbd,
+samp samp,
+h1 code,
+h1 kbd,
+h1 samp,
+h2 code,
+h2 kbd,
+h2 samp {
+	letter-spacing : inherit; /* Prevent tightened text from cascading */
+	word-spacing : inherit /* Prevent tightened text from cascading */
+}
+
+
+
 sub {
 	vertical-align : sub
 }
