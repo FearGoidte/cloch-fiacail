@@ -119,10 +119,6 @@ blockquote > footer {
 	display : table-caption
 }
 
-figcaption {
-	display:none
-}
-
 pre {
 	font-family : inherit; /* Nullify common user-agent monospace default pre might be used for body text whose whitespace layout is significant such as some forms of poetry */
 	white-space : pre-line; /* Preserve whitespace whilst preventing element from stretching width of parent element */
@@ -576,7 +572,8 @@ table {
 }
 
 caption {
-	display : table-caption
+	display : table-caption;
+	text-align : inherit /* Nullify common user-agent centre alignment default */
 }
 
 colgroup,
