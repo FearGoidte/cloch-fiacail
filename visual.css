@@ -88,6 +88,24 @@ header > *, /* Remove margins for elements within headers */
 }
 
 blockquote,
+code,
+footer,
+kbd,
+samp,
+strong {
+	line-height : 1.4rem
+}
+
+blockquote,
+code,
+kbd,
+samp,
+sub,
+sup {
+	font-size : .85em
+}
+
+blockquote,
 div,
 figure,
 form,
@@ -179,10 +197,6 @@ mark {
 	z-index : -1 /* Ensures that the padded background colour bleeds under rather than over other elements */
 }
 
-code,
-kbd,
-mark,
-samp,
 sub,
 sup {
 	line-height : 0 /* Elements that have a ‘vertical-align’ other than baseline or a position value will expand their parent element’s line-height unless their own line-height is set to ‘0’ */
@@ -227,22 +241,24 @@ h2 samp {
 	word-spacing : inherit /* Prevent tightened text from cascading */
 }
 
-sub {
-	vertical-align : sub
-}
-
-sup {
-	vertical-align : super
-}
-
 sub,
 sup {
-	font-size : smaller
+	position : relative;
+	vertical-align : baseline /* Nullify common user-agent ‘sub’ and ‘super’ defaults */
+}
+
+sub {
+	bottom : -.1em
+}
+
+sup {
+	top : -.1em
 }
 
 a:link,
 a:visited,
 a:active {
+	background-color : inherit;
 	color : inherit /* Nullify common user-agent colour defaults */
 }
 
@@ -259,10 +275,12 @@ a:visited { /* Visited links */
 }
 
 a:link:hover {
+	background-color : inherit;
 	color : rgba(0, 0, 238, 1) /* Blue */
 }
 
 a:visited:hover {
+	background-color : inherit;
 	color : rgba(85, 26, 139, 1) /* Purple */
 }
 
@@ -508,7 +526,7 @@ ul > li > ul > li > ul > li > ul > li > ul > li::before {
 }
 
 /** Ordered lists **/
-ol {
+ol > li:first-child {
 	counter-reset : item
 }
 
@@ -650,6 +668,7 @@ tr[hidden] {
 	visibility : collapse
 }
 
+caption,
 td,
 th {
 	padding : 0 .5em
@@ -784,6 +803,54 @@ video {
 
 .c,/*  Comment */
 .cm,/*  Comment Multiline */
+.c1,/*  Comment Single */
+.cp,/*  Comment Preproc */
+.cs,/*  Comment Special */
+.bp,/*  Name Builtin Pseudo */
+.gh,/*  Generic Heading */
+.gr,/*  Generic Error */
+.gt,/*  Generic Traceback */
+.go,/*  Generic Output */
+.gp,/*  Generic Prompt */
+.nn,/*  Name Namespace */
+.gu,/*  Generic Subheading */
+.kt,/*  Keyword Type */
+.nc,/*  Name Class */
+.m,/*  Literal Number */
+.mf,/*  Literal Number Float */
+.mh,/*  Literal Number Hex */
+.mi,/*  Literal Number Integer */
+.mo,/*  Literal Number Oct */
+.il,/*  Literal Number Integer Long */
+.s,/*  Literal String */
+.sb,/*  Literal String Backtick */
+.sc,/*  Literal String Char */
+.sd,/*  Literal String Doc */
+.s2,/*  Literal String Double */
+.se,/*  Literal String Escape */
+.sh,/*  Literal String Heredoc */
+.si,/*  Literal String Interpol */
+.sx,/*  Literal String Other */
+.s1,/*  Literal String Single */
+.na,/*  Name Attribute */
+.no,/*  Name Constant */
+.ni,/*  Name Entity */
+.nv,/*  Name Variable */
+.vc,/*  Name Variable Class */
+.vg,/*  Name Variable Global */
+.vi,/*  Name Variable Instance */
+.nb,/*  Name.Builtin */
+.ne,/*  Name Exception */
+.nf,/*  Name Function */
+.nt,/*  Name Tag */
+.w,/*  Text.Whitespace */
+.sr,/*  Literal String Regex */
+.ss {/*  Literal String Symbol */
+	background-color : inherit
+}
+
+.c,/*  Comment */
+.cm,/*  Comment Multiline */
 .c1 {/*  Comment Single */
 	color : #998
 }
@@ -810,7 +877,8 @@ video {
 }
 
 .gd .x {/*  Generic Deleted Specific */
-	background-color : #faa
+	background-color : #faa;
+	color : inherit
 }
 
 .gr,/*  Generic Error */
@@ -823,7 +891,8 @@ video {
 }
 
 .gi .x {/*  Generic Inserted Specific */
-	background-color : #afa
+	background-color : #afa;
+	color : inherit
 }
 
 .go {/*  Generic Output */
