@@ -239,22 +239,22 @@ a:active {
 
 a:link { /* Unvisited links */
 	text-decoration : underline;
-	-webkit-text-decoration-color: #0000EE; /* Blue */
-	text-decoration-color: #0000EE; /* Blue */
+	-webkit-text-decoration-color: rgba(0, 0, 238, 1); /* Blue */
+	text-decoration-color: rgba(0, 0, 238, 1); /* Blue */
 	transition : color .25s ease
 }
 
 a:visited { /* Visited links */
-	-webkit-text-decoration-color: #551A8B; /* Purple */
-	text-decoration-color: #551A8B /* Purple */
+	-webkit-text-decoration-color: rgba(85, 26, 139, 1); /* Purple */
+	text-decoration-color: rgba(85, 26, 139, 1) /* Purple */
 }
 
 a:link:hover {
-	color : blue
+	color : rgba(0, 0, 238, 1) /* Blue */
 }
 
 a:visited:hover {
-	color : purple
+	color : rgba(85, 26, 139, 1) /* Purple */
 }
 
 a:active { /* As a link is activated. Moves the text down as though a button were depressed */
@@ -272,7 +272,7 @@ abbr[title],
 }
 
 mark {
-	background : rgb(255, 248, 220); /*Cornsilk */
+	background : rgba(255, 248, 220, 1); /*Cornsilk */
 	color : inherit
 }
 
