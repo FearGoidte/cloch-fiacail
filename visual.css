@@ -88,20 +88,14 @@ header > *, /* Remove margins for elements within headers */
 }
 
 blockquote,
-code,
 footer,
-kbd,
-samp,
-strong {
+nav {
 	line-height : 1.4rem
 }
 
 blockquote,
-code,
-kbd,
-samp,
-sub,
-sup {
+footer,
+nav {
 	font-size : .85em
 }
 
@@ -157,6 +151,21 @@ var {
 	font-style : italic
 }
 
+code,
+kbd,
+samp,
+strong {
+	line-height : 1.4rem
+}
+
+code,
+kbd,
+samp,
+sub,
+sup {
+	font-size : .85em
+}
+
 em cite::after,
 em dfn::after {
 	content : "’"
@@ -195,11 +204,6 @@ mark {
 	padding : 0 .15em;/* Creates horizontal space so that the background colour expands outwards from the text */
 	position : relative; /* Position needs to be something other than “static” for “z-index” settings to apply */
 	z-index : -1 /* Ensures that the padded background colour bleeds under rather than over other elements */
-}
-
-sub,
-sup {
-	line-height : 0 /* Elements that have a ‘vertical-align’ other than baseline or a position value will expand their parent element’s line-height unless their own line-height is set to ‘0’ */
 }
 
 code,
@@ -243,6 +247,7 @@ h2 samp {
 
 sub,
 sup {
+	line-height : 0; /* Elements that have a ‘vertical-align’ other than baseline or a position value will expand their parent element’s line-height unless their own line-height is set to ‘0’ */
 	position : relative;
 	vertical-align : baseline /* Nullify common user-agent ‘sub’ and ‘super’ defaults */
 }
