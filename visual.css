@@ -231,22 +231,35 @@ sup {
 	font-size : smaller
 }
 
-:link {
-	color : #0000EE /* Blue */
+a:link,
+a:visited,
+a:active {
+	color : inherit /* Nullify common user-agent colour defaults */
 }
 
-:link,
-:visited {
-	background-color : inherit
+a:link { /* Unvisited links */
+	text-decoration : underline;
+	-webkit-text-decoration-color: #0000EE; /* Blue */
+	text-decoration-color: #0000EE; /* Blue */
+	transition : color .25s ease
 }
 
-:visited {
-	color : #551A8B /* Purple */
+a:visited { /* Visited links */
+	-webkit-text-decoration-color: #551A8B; /* Purple */
+	text-decoration-color: #551A8B /* Purple */
 }
 
-:link,
-:visited {
-	text-decoration : underline
+a:link:hover {
+	color : blue
+}
+
+a:visited:hover {
+	color : purple
+}
+
+a:active { /* As a link is activated. Moves the text down as though a button were depressed */
+	position : relative;
+	top : .1em
 }
 
 abbr[title],
