@@ -223,8 +223,8 @@ h1,
 h2,
 kbd,
 samp {
-	letter-spacing : -.05em; /* Tighten large headings and fixed-width text */
-	word-spacing : -.05em /* Tighten large headings and fixed-width text */
+	letter-spacing : -.025em; /* Tighten large headings and fixed-width text */
+	word-spacing : -.025em /* Tighten large headings and fixed-width text */
 }
 code code,
 code kbd,
