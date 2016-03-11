@@ -454,6 +454,11 @@ h6 {
 	font-size : inherit /* Same as ancestor’s font-size */
 }
 
+header > * {
+	margin-bottom : 0;
+	margin-top : 0
+}
+
 /* 10.3.8 Lists */
 dd,
 dl,
@@ -602,10 +607,12 @@ ol > li > ol > li > ol > li> ol > li > ol > li::before {
 
 /* Turn off generated content lists */
 
+[role=navigation] li::before,
 .serial-comma > li::before {
 	content : ""
 }
 
+[role=navigation] ol,
 .serial-comma {
 	padding : 0
 }
