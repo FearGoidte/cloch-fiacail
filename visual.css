@@ -154,13 +154,6 @@ var {
 code,
 kbd,
 samp,
-strong {
-	line-height : 1.4rem
-}
-
-code,
-kbd,
-samp,
 sub,
 sup {
 	font-size : .85em
@@ -192,18 +185,31 @@ strong strong {
 	font-size : inherit
 }
 
-code {
+code,
+.code-quote {
 	background-color : rgba(0, 0, 0, 0.04); /* Light grey */
 	color : inherit
 }
 
+.code-quote code {
+	background-color : initial;
+	color : initial
+}
+
 code,
 mark {
-	border-radius : .5em 2em .5em; /* Creates a slanted background to suggest a marker-pen has been dragged right to left across the text */
+	border-radius : .5em 2em .5em /* Creates a slanted background to suggest a marker-pen has been dragged right to left across the text */
+}
+
+code,
+mark,
+.code-quote {
 	margin : 0 -.15em;/* Removes the horizontal space created by the following padding */
-	padding : 0 .15em;/* Creates horizontal space so that the background colour expands outwards from the text */
-	position : relative; /* Position needs to be something other than “static” for “z-index” settings to apply */
-	z-index : -1 /* Ensures that the padded background colour bleeds under rather than over other elements */
+	padding : 0 .15em/* Creates horizontal space so that the background colour expands outwards from the text */
+}
+
+.code-quote {
+	border-radius : .5em
 }
 
 code,
@@ -214,7 +220,7 @@ samp {
 http://georgebutler.com/blog/typography/10-definitive-web-font-stacks-for-designers/ */
 /* Clear Code
 (The best monospaced fonts. Easy on a developer’s weary eyes) */
-	white-space : pre-line; /* Preserve whitespace whilst preventing element from stretching width of parent element */
+	white-space : pre-wrap; /* Preserve whitespace whilst preventing element from stretching width of parent element */
 	word-break : normal /* Preserve whitespace whilst preventing element from stretching width of parent element */
 }
 
@@ -259,39 +265,35 @@ sub {
 sup {
 	top : -.1em
 }
-
+/* LINKS L.V.H.A. */
 a:link,
-a:visited,
-a:active {
-	background-color : inherit;
-	color : inherit /* Nullify common user-agent colour defaults */
+a:link:visited,
+a:link:active {
+	color : inherit;
 }
-
 a:link { /* Unvisited links */
-	text-decoration : underline;
-	-webkit-text-decoration-color: rgba(0, 0, 238, 1); /* Blue */
-	text-decoration-color: rgba(0, 0, 238, 1); /* Blue */
+	border-bottom : thin solid rgba(0, 0, 238, 1); /* Blue */
+	padding-bottom : .005em;
+	text-decoration : none;
 	transition : color .25s ease
 }
-
-a:visited { /* Visited links */
-	-webkit-text-decoration-color: rgba(85, 26, 139, 1); /* Purple */
-	text-decoration-color: rgba(85, 26, 139, 1) /* Purple */
+a:link:visited { /* Visited links */
+	border-color : rgba(85, 26, 139, 1) /* Purple */
 }
-
-a:link:hover {
-	background-color : inherit;
+a:link:hover,
+a:link:active {
 	color : rgba(0, 0, 238, 1) /* Blue */
 }
-
-a:visited:hover {
-	background-color : inherit;
+a:link:visited:hover {
 	color : rgba(85, 26, 139, 1) /* Purple */
 }
-
-a:active { /* As a link is activated. Moves the text down as though a button were depressed */
+a:link:active { /* As a link is activated. Moves the text down as though a button were depressed */
 	position : relative;
 	top : .1em
+}
+
+[role=banner] [role=navigation] a {
+	border-width : 0
 }
 
 abbr[title],
@@ -417,9 +419,14 @@ http://georgebutler.com/blog/typography/10-definitive-web-font-stacks-for-design
 
 h1,
 h2,
+h3 {
+	line-height : 2.8rem
+}
+
+h1,
+h2,
 h3,
 header {/* Header selector assumes that only h1–h3 appear in header elements */
-	line-height : 2.8rem;
 	margin : 2.8rem 0 1.4rem 0
 }
 
@@ -457,6 +464,16 @@ h6 {
 header > * {
 	margin-bottom : 0;
 	margin-top : 0
+}
+
+header h1,
+header h2,
+header h3 {
+	margin : .7rem 0
+}
+
+header p {
+	text-indent : initial
 }
 
 /* 10.3.8 Lists */
