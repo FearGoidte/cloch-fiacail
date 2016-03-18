@@ -556,7 +556,10 @@ ol > li:first-child {
 ol > li::before {
 	content : counter(item) ". ";
 	counter-increment : item;
-	letter-spacing : -.025em
+	left : -1.4em;
+	letter-spacing : -.025em;
+	text-align : right; /* Additional rules to account for top-level double digit lists */
+	width : 1.2em /* Additional rules to account for top-level double digit lists */
 }
 
 ol > li > ol > li::before {
