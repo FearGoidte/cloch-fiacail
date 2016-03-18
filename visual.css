@@ -202,8 +202,7 @@ mark {
 }
 
 code,
-mark,
-.code-quote {
+mark {
 	margin : 0 -.15em;/* Removes the horizontal space created by the following padding */
 	padding : 0 .15em/* Creates horizontal space so that the background colour expands outwards from the text */
 }
@@ -270,6 +269,7 @@ a:link,
 a:link:visited,
 a:link:active {
 	color : inherit;
+	background-color : initial
 }
 a:link { /* Unvisited links */
 	border-bottom : thin solid rgba(0, 0, 238, 1); /* Blue */
@@ -280,12 +280,13 @@ a:link { /* Unvisited links */
 a:link:visited { /* Visited links */
 	border-color : rgba(85, 26, 139, 1) /* Purple */
 }
-a:link:hover,
-a:link:active {
-	color : rgba(0, 0, 238, 1) /* Blue */
+a:link:hover {
+	color : rgba(0, 0, 238, 1); /* Blue */
+	background-color : initial
 }
 a:link:visited:hover {
-	color : rgba(85, 26, 139, 1) /* Purple */
+	color : rgba(85, 26, 139, 1); /* Purple */
+	background-color : initial
 }
 a:link:active { /* As a link is activated. Moves the text down as though a button were depressed */
 	position : relative;
@@ -323,9 +324,9 @@ del {
 	background-color : inherit;
 	color : inherit;
 	text-decoration : line-through;
-	text-decoration-color : red;
 	-moz-text-decoration-color : red;
-	-webkit-text-decoration-color : red
+	-webkit-text-decoration-color : red;
+	text-decoration-color : red
 }
 
 q::after {
@@ -461,11 +462,6 @@ h6 {
 	font-size : inherit /* Same as ancestor’s font-size */
 }
 
-header > * {
-	margin-bottom : 0;
-	margin-top : 0
-}
-
 header h1,
 header h2,
 header h3 {
@@ -522,7 +518,7 @@ ul > li > ul {
 }
 
 li::before {
-	left : -1.2rem; /* Must be the same as the above nested ordered list margin */
+	left : -1.2em; /* Must be the same as the above nested ordered list margin */
 	vertical-align : text-bottom;
 	position : absolute
 }
@@ -569,35 +565,35 @@ ol > li > ol > li::before {
 
 /* Since I am using decimal numbers, the counter increases in width for each depth of nesting. Therefore the padding and left offset needs to be increased for each depth. These rules only accommodate nesting lists down to five levels (the same depth as can be indicated by the heading levels). Greater list depths need additional rules or the markers and the list item content will collide. */
 ol > li > ol {
-	padding-left : 1.8rem
+	padding-left : 1.8em
 }
 
 ol > li > ol > li > ol {
-	padding-left : 2.6rem
+	padding-left : 2.6em
 }
 
 ol > li > ol > li > ol > li > ol {
-	padding-left : 3.4rem
+	padding-left : 3.4em
 }
 
 ol > li > ol > li > ol > li > ol > li ol {
-	padding-left : 4rem
+	padding-left : 4em
 }
 
 ol > li > ol > li::before {
-	left : -1.8rem
+	left : -1.8em
 }
 
 ol > li > ol > li > ol > li::before {
-	left : -2.6rem
+	left : -2.6em
 }
 
 ol > li > ol > li > ol > li> ol > li::before {
-	left : -3.4rem
+	left : -3.4em
 }
 
 ol > li > ol > li > ol > li> ol > li > ol > li::before {
-	left : -4rem
+	left : -4em
 }
 
 .serial-comma > li {/* Inline style serial comma list for list items which are children of ordered or unordered lists with the class “serial-comma” */
