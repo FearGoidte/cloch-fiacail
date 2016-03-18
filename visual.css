@@ -220,7 +220,7 @@ http://georgebutler.com/blog/typography/10-definitive-web-font-stacks-for-design
 /* Clear Code
 (The best monospaced fonts. Easy on a developer’s weary eyes) */
 	white-space : pre-wrap; /* Preserve whitespace whilst preventing element from stretching width of parent element */
-	word-break : normal /* Preserve whitespace whilst preventing element from stretching width of parent element */
+	word-break : break-all /* Preserve whitespace whilst preventing element from stretching width of parent element */
 }
 
 code,
