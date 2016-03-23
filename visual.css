@@ -116,6 +116,10 @@ blockquote {
 	margin-right : 1.4rem
 }
 
+blockquote footer {
+	font-size : inherit
+}
+
 article footer::before,
 blockquote footer::before {
 	content : ""
