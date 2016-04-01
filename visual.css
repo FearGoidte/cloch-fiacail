@@ -494,7 +494,7 @@ ul {
 dl,
 ol,
 ul {
-	margin : 1.4rem 0;
+	margin : 1.4rem 0 1.4rem -.9em; /* Negative margin creates space for hanging indentation */
 	padding : 0
 }
 
@@ -795,7 +795,7 @@ video {
 .ne,/* Name Exception */
 .nf,/* Name Function */
 .ow {/* Operator Word */
-	font-weight : bold
+	font-weight : 600
 }
 
 .c,/* Comment */
