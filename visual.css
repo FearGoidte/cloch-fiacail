@@ -90,7 +90,8 @@ header > *, /* Remove margins for elements within headers */
 
 blockquote,
 footer,
-nav {
+nav,
+.subtitle {
 	line-height : 1.4rem
 }
 
@@ -419,6 +420,7 @@ h5,
 h6,
 header,
 th,
+.subtitle,
 [role=banner] {
 	font-family : Cambria, Georgia, "New Century Schoolbook", "Century Schoolbook L", "Times New Roman", serif;
 /* George Butler Web Design—10 Definitve Web Font Stacks for designers
@@ -461,7 +463,8 @@ h6 {
 	margin : 1.4rem 0 0
 }
 
-h4 {
+h4,
+.subtitle {
 	font-size : 1.3em
 }
 
@@ -481,6 +484,11 @@ header h3 {
 
 header p {
 	text-indent : initial
+}
+
+.subtitle {
+	font-style : italic;
+	margin : 0 0 1.4rem 0
 }
 
 /* 10.3.8 Lists */
