@@ -47,7 +47,7 @@ http://georgebutler.com/blog/typography/10-definitive-web-font-stacks-for-design
 body {
 	margin : 1.4rem auto;
 	max-width : 40em; /* This is for a single column, can be changed for wider displays */
-	padding : 0 1.9em /* Padding sufficient to create space on the left for list markers */
+	padding : 0 1.4em /* Padding sufficient to create space on the left for list markers */
 }
 
 /* 10.3.3 Flow content */
@@ -531,8 +531,8 @@ Lists
 
 li::before {
 	display : table-cell; /* Means that the marker is placed outside of item text */
-	left : -1.9em; /* For top level only, equal to the horizontal padding on the body element minus the same “.2em” as the padding on nested list items below */
-	width : 1.7em; /* For top level only, creates space for list items up to “999” and enables “text-align : right” */
+	left : -1.4em; /* For top level only, equal to the horizontal padding on the body element minus the same “.2em” as the padding on nested list items below */
+	width : 1.2em; /* For top level only, creates space for list items up to “999” and enables “text-align : right” */
 	position : absolute;
 	text-align : right /* For top level only, my personal preference for the variable width list numbers within the top level of an ordered list */
 }
