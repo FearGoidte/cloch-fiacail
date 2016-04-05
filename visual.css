@@ -305,10 +305,6 @@ a:link:active { /* As a link is activated. Moves the text down as though a butto
 	top : .1em
 }
 
-[role=banner] [role=navigation] a {
-	border-width : 0
-}
-
 abbr[title],
 [rel~=help] {
 	cursor : help
