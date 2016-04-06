@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+html {
+	background : #fff /* Don’t waste a printer on coloured or fancy backgrounds */;
+	color : #000;
+	font-size : 12px
+}
+
+form /* Can’t use on print */,
+nav /* Can’t use on print */,
+body > a /* Skip link */,
+[role=navigation] /* Can’t use on print */ {
+	display : none
+}
+
+footer,
+header,
+h1 ~ article,
+h1 ~ ol > li {
+	break-inside : avoid
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	page-break-after : avoid
+}
