@@ -278,8 +278,8 @@ sup {
 }
 /* LINKS L.V.H.A. */
 a:link,
-a:link:visited,
-a:link:active {
+a:visited,
+a:active {
 	color : inherit;
 	background-color : initial
 }
@@ -289,18 +289,18 @@ a:link { /* Unvisited links */
 	text-decoration : none;
 	transition : color .25s ease
 }
-a:link:visited { /* Visited links */
+a:visited { /* Visited links */
 	border-color : rgba(85, 26, 139, 1) /* Purple */
 }
-a:link:hover {
+a:hover {
 	color : rgba(0, 0, 238, 1); /* Blue */
 	background-color : initial
 }
-a:link:visited:hover {
+a:visited:hover {
 	color : rgba(85, 26, 139, 1); /* Purple */
 	background-color : initial
 }
-a:link:active { /* As a link is activated. Moves the text down as though a button were depressed */
+a:active { /* As a link is activated. Moves the text down as though a button were depressed */
 	position : relative;
 	top : .1em
 }
