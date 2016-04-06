@@ -1,4 +1,4 @@
-<h1 xml:lang="la">ex·nihilo</h1>
+<h1 xml:lang="ga">Cloch fiacail</h1>
 
 There are numerous ways to start a style sheet and numerous ways to organize them. Unfortunately there is no right way, and yet plenty of wrongs ones.
 
