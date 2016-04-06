@@ -3,7 +3,15 @@
 html {
 	background : #fff /* Don’t waste a printer on coloured or fancy backgrounds */;
 	color : #000;
-	font-size : 12px
+	font-size : 12px;
+	margin : 0;
+	padding : 0
+}
+
+body {
+	margin : 0;
+	padding : 0;
+	width : 100%
 }
 
 form /* Can’t use on print */,
@@ -28,3 +36,8 @@ h5,
 h6 {
 	page-break-after : avoid
 }
+
+a:link {
+	border : none /* Turn off link styling */
+}
+
