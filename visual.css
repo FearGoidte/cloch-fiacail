@@ -1,8 +1,12 @@
 ﻿@charset "UTF-8";
 @namespace "http://www.w3.org/1999/xhtml";
 
-/* 10.3 Non-replaced elements */
-/* 10.3.1 Hidden elements */
+/* # =================================================================
+   # 10.3 Non-replaced elements
+   # ================================================================= */
+/*
+10.3.1 Hidden elements
+*/
 area,
 base,
 datalist,
@@ -26,7 +30,9 @@ embed[hidden] {
 	width : 0
 }
 
-/* 10.3.2 The page */
+/*
+10.3.2 The page
+*/
 body,
 html {
 	display : block
@@ -35,22 +41,24 @@ html {
 html {
 	background-color : rgb(250, 250, 250);
 	color : rgb(51,51,51);/* Very dark grey */
-	font : normal normal normal 125%/1.4 Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+	font : normal normal normal 125%/1.4 Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif
 	/* George Butler Web Design—10 Definitve Web Font Stacks for designers
 http://georgebutler.com/blog/typography/10-definitive-web-font-stacks-for-designers/ */
 /* Display Serifs
-(Delicate details. Best seen at large sizes) */
+(Delicate details. Best seen at large sizes) */;
 	margin : 0;
 	padding : 0
 }
 
 body {
 	margin : 1.4rem auto;
-	max-width : 40em; /* This is for a single column, can be changed for wider displays */
+	max-width : 40em /* This is for a single column, can be changed for wider displays */;
 	padding : 0 1.4em /* Padding sufficient to create space on the left for list markers */
 }
 
-/* 10.3.3 Flow content */
+/*
+10.3.3 Flow content
+*/
 address,
 div,
 form,
@@ -62,7 +70,7 @@ pre {
 }
 
 address {
-	font-family : inherit; /* Nullify common user-agent monospace default */
+	font-family : inherit /* Nullify common user-agent monospace default */;
 	font-style : inherit /* Nullify common user-agent italic default */
 }
 
@@ -82,7 +90,7 @@ article > footer,
 figcaption,
 p,
 blockquote > footer,
-header > *, /* Remove margins for elements within headers */
+header > * /* Remove margins for elements within headers */,
 .serial-comma {
 	margin-bottom : 0;
 	margin-top : 0
@@ -148,13 +156,14 @@ blockquote > footer {
 }
 
 pre {
-	font-family : inherit; /* Nullify common user-agent monospace default pre might be used for body text whose whitespace layout is significant such as some forms of poetry */
-	white-space : pre-line; /* Preserve whitespace whilst preventing element from stretching width of parent element */
+	font-family : inherit /* Nullify common user-agent monospace default pre might be used for body text whose whitespace layout is significant such as some forms of poetry */;
+	white-space : pre-line /* Preserve whitespace whilst preventing element from stretching width of parent element */;
 	word-break : normal /* Preserve whitespace whilst preventing element from stretching width of parent element */
 }
 
-/* 10.3.4 Phrasing content */
-
+/*
+10.3.4 Phrasing content
+*/
 cite,
 dfn,
 em,
@@ -182,7 +191,7 @@ em dfn::before {
 
 strong,
 em em {
-	font-weight : inherit; /* Nullify common user-agent bold default */
+	font-weight : inherit /* Nullify common user-agent bold default */;
 	text-transform : uppercase
 }
 
@@ -198,7 +207,7 @@ strong strong {
 
 code,
 .code-quote {
-	background-color : rgba(0, 0, 0, 0.04); /* Light grey */
+	background-color : rgba(0, 0, 0, 0.04) /* Light grey */;
 	color : inherit
 }
 
@@ -215,8 +224,8 @@ mark {
 code,
 mark,
 .code-quote {
-	margin : 0 -.15em;/* Removes the horizontal space created by the following padding */
-	padding : 0 .15em/* Creates horizontal space so that the background colour expands outwards from the text */
+	margin : 0 -.15em /* Removes the horizontal space created by the following padding */;
+	padding : 0 .15em /* Creates horizontal space so that the background colour expands outwards from the text */
 }
 
 .code-quote {
@@ -226,12 +235,12 @@ mark,
 code,
 kbd,
 samp {
-	font-family : Consolas, "Bitstream Vera Sans Mono", "Andale Mono", Monaco, "DejaVu Sans Mono", "Lucida Console", monospace;
+	font-family : Consolas, "Bitstream Vera Sans Mono", "Andale Mono", Monaco, "DejaVu Sans Mono", "Lucida Console", monospace
 /* George Butler Web Design—10 Definitve Web Font Stacks for designers
 http://georgebutler.com/blog/typography/10-definitive-web-font-stacks-for-designers/ */
 /* Clear Code
-(The best monospaced fonts. Easy on a developer’s weary eyes) */
-	white-space : pre-wrap; /* Preserve whitespace whilst preventing element from stretching width of parent element */
+(The best monospaced fonts. Easy on a developer’s weary eyes) */;
+	white-space : pre-wrap /* Preserve whitespace whilst preventing element from stretching width of parent element */;
 	word-break : break-all /* Preserve whitespace whilst preventing element from stretching width of parent element */
 }
 
@@ -240,7 +249,7 @@ h1,
 h2,
 kbd,
 samp {
-	letter-spacing : -.025em; /* Tighten large headings and fixed-width text */
+	letter-spacing : -.025em /* Tighten large headings and fixed-width text */;
 	word-spacing : -.025em /* Tighten large headings and fixed-width text */
 }
 code code,
@@ -258,13 +267,13 @@ h1 samp,
 h2 code,
 h2 kbd,
 h2 samp {
-	letter-spacing : inherit; /* Prevent tightened text from cascading */
+	letter-spacing : inherit /* Prevent tightened text from cascading */;
 	word-spacing : inherit /* Prevent tightened text from cascading */
 }
 
 sub,
 sup {
-	line-height : 0; /* Elements that have a ‘vertical-align’ other than baseline or a position value will expand their parent element’s line-height unless their own line-height is set to ‘0’ */
+	line-height : 0 /* Elements that have a ‘vertical-align’ other than baseline or a position value will expand their parent element’s line-height unless their own line-height is set to ‘0’ */;
 	position : relative;
 	vertical-align : baseline /* Nullify common user-agent ‘sub’ and ‘super’ defaults */
 }
@@ -277,7 +286,9 @@ sup {
 	top : -.1em
 }
 
-/* LINKS L.V.H.A. */
+/*
+Links L.V.H.A.
+*/
 a:link,
 a:visited,
 a:active {
@@ -297,12 +308,12 @@ a:visited { /* Visited links */
 }
 
 a:hover {
-	color : rgba(0, 0, 238, 1); /* Blue */
+	color : rgba(0, 0, 238, 1) /* Blue */;
 	background-color : initial
 }
 
 a:visited:hover {
-	color : rgba(85, 26, 139, 1); /* Purple */
+	color : rgba(85, 26, 139, 1) /* Purple */;
 	background-color : initial
 }
 
@@ -321,7 +332,7 @@ abbr[title],
 }
 
 mark {
-	background : rgba(255, 248, 220, 1); /*Cornsilk */
+	background : rgba(255, 248, 220, 1) /*Cornsilk */;
 	color : inherit
 }
 
@@ -372,7 +383,7 @@ blockquote mark {
 	background-color : inherit;
 	color : inherit;
 	font-style : italic;
-	margin : initial; /* Reset the margins set on mark outside of blockquotes */
+	margin : initial /* Reset the margins set on mark outside of blockquotes */;
 	padding : initial /* Reset the padding set on mark outside of blockquotes */
 }
 
@@ -384,13 +395,17 @@ blockquote mark::before {
 	content : '['
 }
 
-/* 10.3.6 Quotes */
+/*
+10.3.6 Quotes
+*/
 :root:lang(en),
 :not(:lang(en)) > :lang(en) {
 	quotes : '“' '”' "‘" "’"
 }
 
-/* 10.3.7 Sections and headings */
+/*
+10.3.7 Sections and headings
+*/
 article,
 aside,
 footer,
@@ -424,11 +439,11 @@ header,
 th,
 .subtitle,
 [role=banner] {
-	font-family : Cambria, Georgia, "New Century Schoolbook", "Century Schoolbook L", "Times New Roman", serif;
+	font-family : Cambria, Georgia, "New Century Schoolbook", "Century Schoolbook L", "Times New Roman", serif
 /* George Butler Web Design—10 Definitve Web Font Stacks for designers
 http://georgebutler.com/blog/typography/10-definitive-web-font-stacks-for-designers/ */
 /* Transitional
-(The work­horses of the serif. Easy on the eyes) */
+(The work­horses of the serif. Easy on the eyes) */;
 	font-weight : inherit
 }
 
@@ -441,8 +456,8 @@ h3 {
 h1,
 h2,
 h3,
-header,
-footer {/* Header selector assumes that only h1–h3 appear in header elements */
+header /* Header selector assumes that only h1–h3 appear in header elements */,
+footer {
 	margin : 2.8rem 0 1.4rem 0
 }
 
@@ -505,12 +520,12 @@ ul {
 dl,
 ol,
 ul {
-	margin : 1.4rem 0; /* Negative margin creates space for hanging indentation */
+	margin : 1.4rem 0 /* Negative margin creates space for hanging indentation */;
 	padding : 0
 }
 
 li {
-	display : table; /* Needed to enable “table-cell” display on “li::before” */
+	display : table /* Needed to enable “table-cell” display on “li::before” */;
 	list-style : none /* Remove automatic markers */;
 	position : relative /* This allows the top–nesting-level of lists to have their markers absolutely positioned into the margin of their parent element */
 }
@@ -586,7 +601,10 @@ li > ul > li::before {
 	width : auto
 }
 
-.serial-comma > li {/* Inline style serial comma list for list items which are children of ordered or unordered lists with the class “serial-comma” */
+/*
+Inline style serial comma list for list items which are children of ordered or unordered lists with the class “serial-comma”
+*/
+.serial-comma > li {
 	display : inline;
 	list-style : none
 }
@@ -608,11 +626,9 @@ li > ul > li::before {
 	content : "."
 }
 
-/* Turn off generated content lists */
-
 [role=navigation] li::before,
 .serial-comma > li::before {
-	content : ""
+	display : none /* Turn off generated content lists */
 }
 
 [role=navigation] ol,
@@ -620,13 +636,15 @@ li > ul > li::before {
 	padding : 0
 }
 
-/* 10.3.9 Tables */
+/*
+10.3.9 Tables
+*/
 table {
 	border-collapse : collapse;
 	border-spacing : 0;
 	box-sizing : border-box;
 	display : table;
-	margin : 1.4rem 0 1.4rem -.5rem; /* Minus margin offsets the ‘td’ and ‘th’ margins */
+	margin : 1.4rem 0 1.4rem -.5rem /* Minus margin offsets the ‘td’ and ‘th’ margins */;
 	text-indent : initial
 }
 
@@ -715,7 +733,9 @@ tr {
 	border-color : inherit
 }
 
-/* 10.3.11 Form controls */
+/*
+10.3.11 Form controls
+*/
 button,
 input,
 keygen,
@@ -727,7 +747,7 @@ textarea {
 }
 
 textarea {
-	white-space : pre-line; /* Preserve whitespace whilst preventing element from stretching width of parent element */
+	white-space : pre-line /* Preserve whitespace whilst preventing element from stretching width of parent element */;
 	word-break : normal /* Preserve whitespace whilst preventing element from stretching width of parent element */
 }
 
@@ -741,10 +761,12 @@ input[type="submit"] {
 	box-sizing : border-box
 }
 
-/* 10.3.12 The hr element */
+/*
+10.3.12 The hr element
+*/
 hr {
 	background : transparent linear-gradient(to right, rgba(255, 255, 255, 0)/* White */, #ccc/* Medium grey */, rgba(255, 255, 255, 0)/* White */);
-	border : none; /* Nullifies common user agent default */
+	border : none /* Nullifies common user agent default */;
 	color : inherit;
 	height : .052em;
 	position : relative;
@@ -753,7 +775,7 @@ hr {
 
 footer::before,
 hr::before {
-	background-color : rgb(250, 250, 250); /* Same as html’s background colour */
+	background-color : rgb(250, 250, 250) /* Same as html’s background colour */;
 	color : inherit;
 	content : "⁂";
 	display : block;
@@ -762,7 +784,9 @@ hr::before {
 	top : -.5em
 }
 
-/* 10.3.13 The fieldset and legend elements */
+/* 10.3.13
+The fieldset and legend elements
+*/
 fieldset {
 	border : groove 2px;
 	margin-left : 2px;
@@ -775,8 +799,12 @@ legend {
 	padding-right : 2px
 }
 
-/* 10.4 Replaced elements */
-/* 10.4.1 Embedded content */
+/* # =================================================================
+   # 10.4 Replaced elements
+   # ================================================================= */
+/*
+10.4.1 Embedded content
+*/
 iframe {
 	border : 2px inset
 }
@@ -791,199 +819,200 @@ video {
 	object-fit : contain
 }
 
-/* http://jekyllrb.com/docs/templates/
-/* https://github.com/mojombo/tpw/tree/master/css/syntax.css
-/* “For an example stylesheet you can look at syntax.css. These are the same styles as used by GitHub and you are free to use them for your own site.” */
-.c,/* Comment */
-.cm,/* Comment Multiline */
-.c1,/* Comment Single */
-.cs,/* Comment Special */
-.ge {/* Generic Emphasis */
+/* # =================================================================
+   # Github style code highlighting
+   # https://jekyllrb.com/docs/templates/
+   # ================================================================= */
+.c /* Comment */,
+.cm /* Comment Multiline */,
+.c1 /* Comment Single */,
+.cs /* Comment Special */,
+.ge /* Generic Emphasis */ {
 	font-style : italic
 }
 
-.k,/* Keyword */
-.o,/* Operator */
-.cp,/* Comment Preproc */
-.cs,/* Comment Special */
-.gs,/* Generic Strong */
-.kc,/* Keyword Constant */
-.kd,/* Keyword Declaration */
-.kp,/* Keyword Pseudo */
-.kr,/* Keyword Reserved */
-.kt,/* Keyword Type */
-.nc,/* Name Class */
-.ne,/* Name Exception */
-.nf,/* Name Function */
-.ow {/* Operator Word */
+.k /* Keyword */,
+.o /* Operator */,
+.cp /* Comment Preproc */,
+.cs /* Comment Special */,
+.gs /* Generic Strong */,
+.kc /* Keyword Constant */,
+.kd /* Keyword Declaration */,
+.kp /* Keyword Pseudo */,
+.kr /* Keyword Reserved */,
+.kt /* Keyword Type */,
+.nc /* Name Class */,
+.ne /* Name Exception */,
+.nf /* Name Function */,
+.ow /* Operator Word */ {
 	font-weight : 600
 }
 
-.c,/* Comment */
-.cm,/* Comment Multiline */
-.c1,/* Comment Single */
-.cp,/* Comment Preproc */
-.cs,/* Comment Special */
-.bp,/* Name Builtin Pseudo */
-.gh,/* Generic Heading */
-.gr,/* Generic Error */
-.gt,/* Generic Traceback */
-.go,/* Generic Output */
-.gp,/* Generic Prompt */
-.nn,/* Name Namespace */
-.gu,/* Generic Subheading */
-.kt,/* Keyword Type */
-.nc,/* Name Class */
-.m,/* Literal Number */
-.mf,/* Literal Number Float */
-.mh,/* Literal Number Hex */
-.mi,/* Literal Number Integer */
-.mo,/* Literal Number Oct */
-.il,/* Literal Number Integer Long */
-.s,/* Literal String */
-.sb,/* Literal String Backtick */
-.sc,/* Literal String Char */
-.sd,/* Literal String Doc */
-.s2,/* Literal String Double */
-.se,/* Literal String Escape */
-.sh,/* Literal String Heredoc */
-.si,/* Literal String Interpol */
-.sx,/* Literal String Other */
-.s1,/* Literal String Single */
-.na,/* Name Attribute */
-.no,/* Name Constant */
-.ni,/* Name Entity */
-.nv,/* Name Variable */
-.vc,/* Name Variable Class */
-.vg,/* Name Variable Global */
-.vi,/* Name Variable Instance */
-.nb,/* Name.Builtin */
-.ne,/* Name Exception */
-.nf,/* Name Function */
-.nt,/* Name Tag */
-.w,/* Text.Whitespace */
-.sr,/* Literal String Regex */
-.ss {/* Literal String Symbol */
+.c /* Comment */,
+.cm /* Comment Multiline */,
+.c1 /* Comment Single */,
+.cp /* Comment Preproc */,
+.cs /* Comment Special */,
+.bp /* Name Builtin Pseudo */,
+.gh /* Generic Heading */,
+.gr /* Generic Error */,
+.gt /* Generic Traceback */,
+.go /* Generic Output */,
+.gp /* Generic Prompt */,
+.nn /* Name Namespace */,
+.gu /* Generic Subheading */,
+.kt /* Keyword Type */,
+.nc /* Name Class */,
+.m /* Literal Number */,
+.mf /* Literal Number Float */,
+.mh /* Literal Number Hex */,
+.mi /* Literal Number Integer */,
+.mo /* Literal Number Oct */,
+.il /* Literal Number Integer Long */,
+.s /* Literal String */,
+.sb /* Literal String Backtick */,
+.sc /* Literal String Char */,
+.sd /* Literal String Doc */,
+.s2 /* Literal String Double */,
+.se /* Literal String Escape */,
+.sh /* Literal String Heredoc */,
+.si /* Literal String Interpol */,
+.sx /* Literal String Other */,
+.s1 /* Literal String Single */,
+.na /* Name Attribute */,
+.no /* Name Constant */,
+.ni /* Name Entity */,
+.nv /* Name Variable */,
+.vc /* Name Variable Class */,
+.vg /* Name Variable Global */,
+.vi /* Name Variable Instance */,
+.nb /* Name.Builtin */,
+.ne /* Name Exception */,
+.nf /* Name Function */,
+.nt /* Name Tag */,
+.w /* Text.Whitespace */,
+.sr /* Literal String Regex */,
+.ss /* Literal String Symbol */ {
 	background-color : inherit
 }
 
-.c,/* Comment */
-.cm,/* Comment Multiline */
-.c1 {/* Comment Single */
+.c /* Comment */,
+.cm /* Comment Multiline */,
+.c1 /* Comment Single */ {
 	color : #998
 }
 
-.err {/* Error */
+.err /* Error */ {
 	background-color : #e3d2d2;
 	color : #a61717
 }
 
-.cp,/* Comment Preproc */
-.cs,/* Comment Special */
-.bp,/* Name Builtin Pseudo */
-.gh {/* Generic Heading */
+.cp /* Comment Preproc */,
+.cs /* Comment Special */,
+.bp /* Name Builtin Pseudo */,
+.gh /* Generic Heading */ {
 	color : #999
 }
 
-.gd,/* Generic Deleted */
-.gi {/* Generic Inserted */
+.gd /* Generic Deleted */,
+.gi /* Generic Inserted */ {
 	color : #000
 }
 
-.gd {/* Generic Deleted */
+.gd /* Generic Deleted */ {
 	background-color : #fdd
 }
 
-.gd .x {/* Generic Deleted Specific */
+.gd .x /* Generic Deleted Specific */ {
 	background-color : #faa;
 	color : inherit
 }
 
-.gr,/* Generic Error */
-.gt {/* Generic Traceback */
+.gr /* Generic Error */,
+.gt /* Generic Traceback */ {
 	color : #a00
 }
 
-.gi {/* Generic Inserted */
+.gi /* Generic Inserted */ {
 	background-color : #dfd
 }
 
-.gi .x {/* Generic Inserted Specific */
+.gi .x /* Generic Inserted Specific */ {
 	background-color : #afa;
 	color : inherit
 }
 
-.go {/* Generic Output */
+.go /* Generic Output */ {
 	color : #888
 }
 
-.gp,/* Generic Prompt */
-.nn {/* Name Namespace */
+.gp /* Generic Prompt */,
+.nn /* Name Namespace */ {
 	color : #555
 }
 
-.gu {/* Generic Subheading */
+.gu /* Generic Subheading */ {
 	color : #aaa
 }
 
-.kt,/* Keyword Type */
-.nc {/* Name Class */
+.kt /* Keyword Type */,
+.nc /* Name Class */ {
 	color : #458
 }
 
-.m,/* Literal Number */
-.mf,/* Literal Number Float */
-.mh,/* Literal Number Hex */
-.mi,/* Literal Number Integer */
-.mo,/* Literal Number Oct */
-.il {/* Literal Number Integer Long */
+.m /* Literal Number */,
+.mf /* Literal Number Float */,
+.mh /* Literal Number Hex */,
+.mi /* Literal Number Integer */,
+.mo /* Literal Number Oct */,
+.il /* Literal Number Integer Long */ {
 	color : #099
 }
 
-.s,/* Literal String */
-.sb,/* Literal String Backtick */
-.sc,/* Literal String Char */
-.sd,/* Literal String Doc */
-.s2,/* Literal String Double */
-.se,/* Literal String Escape */
-.sh,/* Literal String Heredoc */
-.si,/* Literal String Interpol */
-.sx,/* Literal String Other */
-.s1 {/* Literal String Single */
+.s /* Literal String */,
+.sb /* Literal String Backtick */,
+.sc /* Literal String Char */,
+.sd /* Literal String Doc */,
+.s2 /* Literal String Double */,
+.se /* Literal String Escape */,
+.sh /* Literal String Heredoc */,
+.si /* Literal String Interpol */,
+.sx /* Literal String Other */,
+.s1 /* Literal String Single */ {
 	color : #d14
 }
 
-.na,/* Name Attribute */
-.no,/* Name Constant */
-.ni,/* Name Entity */
-.nv,/* Name Variable */
-.vc,/* Name Variable Class */
-.vg,/* Name Variable Global */
-.vi {/* Name Variable Instance */
+.na /* Name Attribute */,
+.no /* Name Constant */,
+.ni /* Name Entity */,
+.nv /* Name Variable */,
+.vc /* Name Variable Class */,
+.vg /* Name Variable Global */,
+.vi /* Name Variable Instance */ {
 	color : #008080
 }
 
-.nb {/* Name.Builtin */
+.nb /* Name.Builtin */ {
 	color : #0086B3
 }
 
-.ne,/* Name Exception */
-.nf {/* Name Function */
+.ne /* Name Exception */,
+.nf /* Name Function */ {
 	color : #900
 }
 
-.nt {/* Name Tag */
+.nt /* Name Tag */ {
 	color : #000080
 }
 
-.w {/* Text.Whitespace */
+.w /* Text.Whitespace */ {
 	color : #bbb
 }
 
-.sr {/* Literal String Regex */
+.sr /* Literal String Regex */ {
 	color : #009926
 }
 
-.ss {/* Literal String Symbol */
+.ss /* Literal String Symbol */ {
 	color : #990073
 }
