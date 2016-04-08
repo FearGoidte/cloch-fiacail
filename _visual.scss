@@ -41,7 +41,7 @@ html {
 html {
 	background-color : rgb(250, 250, 250);
 	color : rgb(51,51,51);/* Very dark grey */
-	font : normal normal normal 125%/1.4 Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif
+	font : normal normal normal 125%/#{$baseline} Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif
 	/* George Butler Web Design—10 Definitve Web Font Stacks for designers
 http://georgebutler.com/blog/typography/10-definitive-web-font-stacks-for-designers/ */
 /* Display Serifs
@@ -51,9 +51,9 @@ http://georgebutler.com/blog/typography/10-definitive-web-font-stacks-for-design
 }
 
 body {
-	margin : 1.4rem auto;
+	margin : #{$baseline}rem auto;
 	max-width : 40em /* This is for a single column, can be changed for wider displays */;
-	padding : 0 1.4em /* Padding sufficient to create space on the left for list markers */
+	padding : 0 #{$baseline}em /* Padding sufficient to create space on the left for list markers */
 }
 
 /*
@@ -80,7 +80,7 @@ p + .serial-comma,
 .serial-comma + address,
 .serial-comma + p,
 .serial-comma + .serial-comma {
-	text-indent : 1.4em
+	text-indent : #{$baseline}em
 }
 
 address,
@@ -98,7 +98,7 @@ blockquote,
 footer,
 nav,
 .subtitle {
-	line-height : 1.4rem
+	line-height : #{$baseline}rem
 }
 
 blockquote,
@@ -112,13 +112,13 @@ div,
 figure,
 hr,
 pre {
-	margin-bottom : 1.4rem;
-	margin-top : 1.4rem
+	margin-bottom : #{$baseline}rem;
+	margin-top : #{$baseline}rem
 }
 
 blockquote {
-	margin-left : 1.4rem;
-	margin-right : 1.4rem
+	margin-left : #{$baseline}rem;
+	margin-right : #{$baseline}rem
 }
 
 blockquote footer {
@@ -421,8 +421,8 @@ article,
 aside,
 nav,
 section {
-	margin-bottom : 1.4rem;
-	margin-top : 1.4rem
+	margin-bottom : #{$baseline}rem;
+	margin-top : #{$baseline}rem
 }
 
 h1,
@@ -454,7 +454,7 @@ h2,
 h3,
 header /* Header selector assumes that only h1–h3 appear in header elements */,
 footer {
-	margin : 2.8rem 0 1.4rem 0
+	margin : #{$baseline*2}rem 0 #{$baseline}rem 0
 }
 
 h1 {
@@ -472,8 +472,8 @@ h3 {
 h4,
 h5,
 h6 {
-	line-height : 1.4rem;
-	margin : 1.4rem 0 0
+	line-height : #{$baseline}rem;
+	margin : #{$baseline}rem 0 0
 }
 
 h4,
@@ -501,7 +501,7 @@ header p {
 
 .subtitle {
 	font-style : italic;
-	margin : 0 0 1.4rem 0
+	margin : 0 0 #{$baseline}rem 0
 }
 
 /* 10.3.8 Lists */
@@ -516,7 +516,7 @@ ul {
 dl,
 ol,
 ul {
-	margin : 1.4rem 0 /* Negative margin creates space for hanging indentation */;
+	margin : #{$baseline}rem 0 /* Negative margin creates space for hanging indentation */;
 	padding : 0
 }
 
@@ -640,7 +640,7 @@ table {
 	border-spacing : 0;
 	box-sizing : border-box;
 	display : table;
-	margin : 1.4rem 0 1.4rem -.5rem /* Minus margin offsets the ‘td’ and ‘th’ margins */;
+	margin : #{$baseline}rem 0 #{$baseline}rem -.5rem /* Minus margin offsets the ‘td’ and ‘th’ margins */;
 	text-indent : initial
 }
 
