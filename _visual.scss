@@ -140,15 +140,17 @@ figure > img,
 figure > object {
 	display : block
 }
+
 blockquote,
 figure {
-	display : table
+	display : table /* Shrink element to the size of its contents and enable the table caption display options */
 }
 
 figcaption,
 blockquote > footer {
-	caption-side : bottom;
-	display : table-caption
+	caption-side : bottom /* Move the caption to the bottoms of the content */;
+	display : table-caption /* Confine caption to the width of its parent */
+
 }
 
 pre {
