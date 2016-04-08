@@ -42,7 +42,7 @@ html {
 html {
 	background-color : rgb(250, 250, 250);
 	color : rgb(51,51,51);/* Very dark grey */
-	font : normal normal normal 125%/#{$baseline} Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif
+	font : normal normal normal 125%/#{$baseline} $body-font-family
 	/* George Butler Web Design—10 Definitve Web Font Stacks for designers
 http://georgebutler.com/blog/typography/10-definitive-web-font-stacks-for-designers/ */
 /* Display Serifs
@@ -233,11 +233,7 @@ mark,
 code,
 kbd,
 samp {
-	font-family : Consolas, "Bitstream Vera Sans Mono", "Andale Mono", Monaco, "DejaVu Sans Mono", "Lucida Console", monospace
-/* George Butler Web Design—10 Definitve Web Font Stacks for designers
-http://georgebutler.com/blog/typography/10-definitive-web-font-stacks-for-designers/ */
-/* Clear Code
-(The best monospaced fonts. Easy on a developer’s weary eyes) */;
+	font-family : $code-font-family;
 	white-space : pre-wrap /* Preserve whitespace whilst preventing element from stretching width of parent element */;
 	word-break : break-all /* Preserve whitespace whilst preventing element from stretching width of parent element */
 }
@@ -434,13 +430,8 @@ h5,
 h6,
 header,
 th,
-.subtitle,
 [role=banner] {
-	font-family : Cambria, Georgia, "New Century Schoolbook", "Century Schoolbook L", "Times New Roman", serif
-/* George Butler Web Design—10 Definitve Web Font Stacks for designers
-http://georgebutler.com/blog/typography/10-definitive-web-font-stacks-for-designers/ */
-/* Transitional
-(The work­horses of the serif. Easy on the eyes) */;
+	font-family : $heading-font-family;
 	font-weight : inherit
 }
 

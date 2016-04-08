@@ -20,11 +20,23 @@ I have split the rules into the following partials:
 
 ### <abbr title="Syntactically Awesome Style Sheets" class="initialism">SASS</abbr> variables
 
-To make it easier to share the partials between projects, I have added some variables to the stylesheets:
+To make it easier to share the partials between projects, I have added some variables to the stylesheets. All the following variables must be specified for all of the partials to work correctly:
 
-#### $baseline
+#### `$baseline`
 
 The line height of the `html` element and used to calculate margins and line heights for other elements.
+
+#### `$body-font-family`
+
+The fonts used for the `html` element.
+
+#### `$code-font-family`
+
+The fonts used for the `code`, `kbd`, and `samp` elements.
+
+#### `$heading-font-family`
+
+The fonts used for the `header`, `h1`–`h6`, and `th` elements as well as elements with the `role` attribute “`banner`”.
 
 ## Significant deletions
 
