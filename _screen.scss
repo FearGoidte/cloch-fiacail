@@ -1,0 +1,49 @@
+form,
+legend {
+	display : block;
+	margin-bottom : 1.4rem;
+	margin-top : 1.4rem
+}
+
+/*
+10.3.11 Form controls
+*/
+button,
+input,
+keygen,
+option,
+optgroup,
+select,
+textarea {
+	text-indent : initial
+}
+
+textarea {
+	white-space : pre-line /* Preserve whitespace whilst preventing element from stretching width of parent element */;
+	word-break : normal /* Preserve whitespace whilst preventing element from stretching width of parent element */
+}
+
+button,
+select,
+input[type="button"],
+input[type="checkbox"],
+input[type="radio"],
+input[type="reset"],
+input[type="submit"] {
+	box-sizing : border-box
+}
+
+/* 10.3.13
+The fieldset and legend elements
+*/
+fieldset {
+	border : groove 2px;
+	margin-left : 2px;
+	margin-right : 2px;
+	padding : .35em .625em .75em
+}
+
+legend {
+	padding-left : 2px;
+	padding-right : 2px
+}
