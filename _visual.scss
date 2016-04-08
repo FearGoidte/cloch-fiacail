@@ -455,7 +455,7 @@ h2,
 h3,
 header /* Header selector assumes that only h1–h3 appear in header elements */,
 footer {
-	margin : #{$baseline*2}rem 0 #{$baseline}rem 0
+	margin : #{$baseline * 2}rem 0 #{$baseline}rem 0
 }
 
 h1 {
@@ -505,7 +505,9 @@ header p {
 	margin : 0 0 #{$baseline}rem 0
 }
 
-/* 10.3.8 Lists */
+/*
+10.3.8 Lists
+*/
 dd,
 dl,
 dt,
@@ -539,10 +541,6 @@ ul > li > ul { /* Remove vertical margins for nested lists */
 	margin : 0
 }
 
-/*
-Lists
-*/
-
 li::before {
 	display : table-cell; /* Means that the marker is placed outside of item text */
 	left : -1.4em; /* For top level only, equal to the horizontal padding on the body element minus the same “.2em” as the padding on nested list items below */
@@ -575,7 +573,9 @@ ul > li > ul > li > ul > li > ul > li > ul > li::before {
 	content : "✤"
 }
 
-/** Ordered lists **/
+/*
+Ordered lists
+*/
 ol > li:first-child {
 	counter-reset : item
 }
