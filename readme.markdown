@@ -9,6 +9,23 @@ I have only included quotation marks for English.
 
 Gradually I will make additions and changes based on use.
 
+## Organization
+
+I have split the rules into the following partials:
+
+* _code-highlighting
+* _print
+* _screen
+* _visual
+
+### <abbr title="Syntactically Awesome Style Sheets" class="initialism">SASS</abbr> variables
+
+To make it easier to share the partials between projects, I have added some variables to the stylesheets:
+
+#### $baseline
+
+The line height of the `html` element and used to calculate margins and line heights for other elements.
+
 ## Significant deletions
 
 ### Obsolete elements
