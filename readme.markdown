@@ -13,10 +13,10 @@ Gradually I will make additions and changes based on use.
 
 I have split the rules into the following partials:
 
-* _code-highlighting
-* _print
-* _screen
-* _visual
+* `_code-highlighting`
+* `_print`
+* `_screen`
+* `_visual`
 
 ### <abbr title="Syntactically Awesome Style Sheets" class="initialism">SASS</abbr> variables
 
