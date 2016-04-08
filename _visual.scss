@@ -1,4 +1,5 @@
 ﻿@charset "UTF-8";
+
 @namespace "http://www.w3.org/1999/xhtml";
 
 /* # =================================================================
@@ -150,7 +151,6 @@ figcaption,
 blockquote > footer {
 	caption-side : bottom /* Move the caption to the bottoms of the content */;
 	display : table-caption /* Confine caption to the width of its parent */
-
 }
 
 pre {
@@ -250,6 +250,7 @@ samp {
 	letter-spacing : -.025em /* Tighten large headings and fixed-width text */;
 	word-spacing : -.025em /* Tighten large headings and fixed-width text */
 }
+
 code code,
 code kbd,
 code samp,
@@ -414,14 +415,12 @@ h4,
 h5,
 h6,
 header,
-nav,
 section {
 	display : block
 }
 
 article,
 aside,
-nav,
 section {
 	margin-bottom : #{$baseline}rem;
 	margin-top : #{$baseline}rem
