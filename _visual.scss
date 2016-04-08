@@ -743,7 +743,8 @@ hr {
 }
 
 footer::before,
-hr::before {
+hr::before,
+[role=contentinfo]::before {
 	background-color : rgb(250, 250, 250) /* Same as html’s background colour */;
 	color : inherit;
 	content : "⁂";
