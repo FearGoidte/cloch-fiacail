@@ -56,7 +56,7 @@ The colour for visited links. Best practise is a variation on theme of ‘purple
 
 #### `$logo-colour`
 
-Principle colour used in logo or used to create identity.
+Principal colour used in logo or used to create identity.
 
 ## Significant deletions
 
