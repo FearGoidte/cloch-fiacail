@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+html {
+	background-color : $background-colour;
+	color : $base-colour
+}
+
 form,
 legend,
 nav {

@@ -40,13 +40,7 @@ html {
 }
 
 html {
-	background-color : rgb(250, 250, 250);
-	color : rgb(51,51,51);/* Very dark grey */
-	font : normal normal normal 125%/#{$baseline} $body-font-family
-	/* George Butler Web Design—10 Definitve Web Font Stacks for designers
-http://georgebutler.com/blog/typography/10-definitive-web-font-stacks-for-designers/ */
-/* Display Serifs
-(Delicate details. Best seen at large sizes) */;
+	font : normal normal normal 125%/#{$baseline} $body-font-family;
 	margin : 0;
 	padding : 0
 }
@@ -292,23 +286,23 @@ a:active {
 }
 
 a:link { /* Unvisited links */
-	border-bottom : thin solid rgba(0, 0, 238, 1); /* Blue */
+	border-bottom : thin solid $link-colour;
 	padding-bottom : .005em;
 	text-decoration : none;
 	transition : color .25s ease
 }
 
 a:visited { /* Visited links */
-	border-color : rgba(85, 26, 139, 1) /* Purple */
+	border-color : $link-colour-visited
 }
 
 a:hover {
-	color : rgba(0, 0, 238, 1) /* Blue */;
+	color : $link-colour;
 	background-color : initial
 }
 
 a:visited:hover {
-	color : rgba(85, 26, 139, 1) /* Purple */;
+	color : $link-colour-visited;
 	background-color : initial
 }
 
@@ -484,7 +478,7 @@ h6 {
 header h1,
 header h2,
 header h3 {
-	margin : .7rem 0
+	margin : #{$baseline / 2}rem 0
 }
 
 header p {
@@ -737,7 +731,7 @@ hr {
 footer::before,
 hr::before,
 [role=contentinfo]::before {
-	background-color : rgb(250, 250, 250) /* Same as html’s background colour */;
+	background-color : $background-colour;
 	color : inherit;
 	content : "⁂";
 	display : block;
