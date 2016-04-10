@@ -38,6 +38,26 @@ The fonts used for the `code`, `kbd`, and `samp` elements.
 
 The fonts used for the `header`, `h1`–`h6`, and `th` elements as well as elements with the `role` attribute “`banner`”.
 
+#### `$background-colour`
+
+The background colour for the the `html` element when displayed on a screen.
+
+#### `$base-colour`
+
+The main body-text colour for screen displays.
+
+#### `$link-colour`
+
+The colour for unvisited links. Best practise is a variation on theme of ‘blue’.
+
+#### `$link-colour-visited`
+
+The colour for visited links. Best practise is a variation on theme of ‘purple’.
+
+#### `$logo-colour`
+
+Principle colour used in logo or used to create identity.
+
 ## Significant deletions
 
 ### Obsolete elements
