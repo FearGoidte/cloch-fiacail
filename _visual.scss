@@ -210,11 +210,7 @@ code,
 
 code,
 mark {
-	border-radius : .5em 2em .5em /* Creates a slanted background to suggest a marker-pen has been dragged right to left across the text */
-}
-
-code,
-mark {
+	border-radius : .5em 2em .5em /* Creates a slanted background to suggest a marker-pen has been dragged right to left across the text */;
 	margin : 0 -.15em /* Removes the horizontal space created by the following padding */;
 	padding : 0 .15em /* Creates horizontal space so that the background colour expands outwards from the text */
 }
