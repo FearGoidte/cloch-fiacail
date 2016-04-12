@@ -199,7 +199,7 @@ strong strong {
 
 code,
 .code-quote {
-	background-color : rgba(0, 0, 0, 0.04) /* Light grey */;
+	background-color : darken($background-colour, 2.5);
 	color : inherit
 }
 
@@ -608,7 +608,7 @@ Inline style serial comma list for list items which are children of ordered or u
 	content : "."
 }
 
-[role=navigation] li::before,
+[role=banner] [role=navigation] li::before,
 .serial-comma > li::before {
 	display : none /* Turn off generated content lists */
 }
@@ -720,7 +720,7 @@ tr {
 10.3.12 The hr element
 */
 hr {
-	background : transparent linear-gradient(to right, rgba(255, 255, 255, 0)/* White */, #ccc/* Medium grey */, rgba(255, 255, 255, 0)/* White */);
+	background : transparent linear-gradient(to right, $background-colour/* White */, $base-colour/* Medium grey */, $background-colour/* White */);
 	border : none /* Nullifies common user agent default */;
 	color : inherit;
 	height : .052em;
@@ -747,7 +747,7 @@ hr::before,
 10.4.1 Embedded content
 */
 iframe {
-	border : 2px inset
+	border : none /* Nullify common user-agent defaults (2px inset) */
 }
 
 img,
