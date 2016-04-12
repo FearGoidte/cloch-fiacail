@@ -214,8 +214,7 @@ mark {
 }
 
 code,
-mark,
-.code-quote {
+mark {
 	margin : 0 -.15em /* Removes the horizontal space created by the following padding */;
 	padding : 0 .15em /* Creates horizontal space so that the background colour expands outwards from the text */
 }
