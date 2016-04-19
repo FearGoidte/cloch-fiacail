@@ -347,7 +347,7 @@ q::before {
 }
 
 br {
-	content : '\A';
+	content : "\A";
 	white-space : pre
 }
 
@@ -356,7 +356,7 @@ nobr {
 }
 
 wbr {
-	content : '\200B'
+	content : "\200B"
 }
 
 nobr wbr {
@@ -372,11 +372,11 @@ blockquote mark {
 }
 
 blockquote mark::after {
-	content : ']'
+	content : "]"
 }
 
 blockquote mark::before {
-	content : '['
+	content : "["
 }
 
 /*
@@ -499,7 +499,7 @@ ul {
 dl,
 ol,
 ul {
-	margin : #{$baseline}rem 0 /* Negative margin creates space for hanging indentation */;
+	margin : #{$baseline}rem 0;
 	padding : 0
 }
 
