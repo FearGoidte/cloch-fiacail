@@ -281,7 +281,7 @@ a:active {
 }
 
 a:link { /* Unvisited links */
-	border-bottom : thin solid $link-colour;
+	border-bottom : .05em solid $link-colour;
 	padding-bottom : .005em;
 	text-decoration : none;
 	transition : color .25s ease
