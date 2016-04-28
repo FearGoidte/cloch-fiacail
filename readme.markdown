@@ -1,7 +1,5 @@
 <h1 xml:lang="ga">Cloch fiacail</h1>
 
-![alt tag](https://raw.githubusercontent.com/FearGoidte/cloch-fiacail/images/cloch-fiacail.svg)
-
 There are numerous ways to start a style sheet and numerous ways to organize them. Unfortunately there is no right way, and yet plenty of wrongs ones.
 
 I have based this general purpose style sheet upon The <abbr title="World Wide Web Consortium" class="initialism">W.3.C.</abbr>’s [10.2 The <abbr title="Cascading Style Sheets" class="initialism">C.S.S.</abbr> user agent style sheet and presentational hints](https://www.w3.org/TR/html5/rendering.html#the-css-user-agent-style-sheet-and-presentational-hints) as at <time datetime="2016-02-17">17<sup>th</sup> February 2016.</time> The intended audience for that stylesheet is *not* web developers but makers of visual agents. Nevertheless the organization of the elements and properties does have a certain logic.
