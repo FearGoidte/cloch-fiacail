@@ -1,6 +1,6 @@
 <h1 xml:lang="ga">Cloch fiacail</h1>
 
-<img src="https://github.com/FearGoidte/cloch-fiacail/blob/master/images/cloch-fiacail.svg" />
+<img src="images/cloch-fiacail.svg" />
 
 There are numerous ways to start a style sheet and numerous ways to organize them. Unfortunately there is no right way, and yet plenty of wrongs ones.
 
