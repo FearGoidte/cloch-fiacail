@@ -1,6 +1,6 @@
 ﻿<h1 xml:lang="ga">Cloch fiacail</h1>
 
-<img src="https://cdn.rawgit.com/FearGoidte/cloch-fiacail/master/images/cloch-fiacail.svg" />
+![](https://cdn.rawgit.com/FearGoidte/cloch-fiacail/master/images/cloch-fiacail.svg)
 
 There are numerous ways to start a style sheet and numerous ways to organize them. Unfortunately there is no right way, and yet plenty of wrongs ones.
 
