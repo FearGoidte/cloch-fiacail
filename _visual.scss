@@ -149,6 +149,7 @@ blockquote > footer {
 
 pre {
 	font-family : inherit /* Nullify common user-agent monospace default pre might be used for body text whose whitespace layout is significant such as some forms of poetry */;
+	overflow : auto;
 	white-space : pre-line /* Preserve whitespace whilst preventing element from stretching width of parent element */;
 	word-break : normal /* Preserve whitespace whilst preventing element from stretching width of parent element */
 }
@@ -224,7 +225,7 @@ kbd,
 samp {
 	font-family : $code-font-family;
 	white-space : pre-wrap /* Preserve whitespace whilst preventing element from stretching width of parent element */;
-	word-break : break-all /* Preserve whitespace whilst preventing element from stretching width of parent element */
+	word-break : normal /* Preserve whitespace whilst preventing element from stretching width of parent element */
 }
 
 code,
