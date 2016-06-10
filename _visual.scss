@@ -428,7 +428,7 @@ th,
 h1,
 h2,
 h3 {
-	line-height : 2.8rem
+	line-height : #{$baseline * 2}rem
 }
 
 h1,
@@ -436,7 +436,7 @@ h2,
 h3,
 header /* Header selector assumes that only h1–h3 appear in header elements */,
 footer {
-	margin : #{$baseline * 2}rem 0 #{$baseline}rem 0
+	margin : #{$baseline * 2}rem 0 #{$baseline}rem
 }
 
 h1 {
@@ -483,7 +483,7 @@ header p {
 
 .subtitle {
 	font-style : italic;
-	margin : 0 0 #{$baseline}rem 0
+	margin : 0 0 #{$baseline}rem
 }
 
 /*
