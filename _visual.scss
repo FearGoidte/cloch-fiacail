@@ -217,7 +217,11 @@ mark {
 }
 
 .code-quote {
-	border-radius : .5em
+	border-color : darken($background-colour, 5.5);
+	border-style : solid;
+	border-width : .05em .05em .05em .5em;
+	margin : calc(#{$baseline}em - .55em) 0 calc(#{$baseline}em - .55em) -1em /* The vertical margins are the baseline minus the vertical borders and padding */;
+	padding : .5em
 }
 
 code,
