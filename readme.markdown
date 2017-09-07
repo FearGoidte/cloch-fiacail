@@ -20,7 +20,7 @@ I have split the rules into the following partials:
 * `_screen`
 * `_visual`
 
-### <abbr title="Syntactically Awesome Style Sheets" class="initialism">SASS</abbr> variables
+### <abbr title="Syntactically Awesome Style Sheets" class="initialism">SASS</abbr> variables
 
 To make it easier to share the partials between projects, I have added some variables to the stylesheets. All the following variables must be specified for all of the partials to work correctly:
 
